@@ -13,7 +13,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 
 
-Hi, my name is Alibek, and i'm a Software Engineer from Kazakhstan kz. Dedicated to being a Fullstack Engineer.
+Hi, my name is Alibek, and i'm a _Software Engineer_ from Kazakhstan kz. Dedicated to being a _Fullstack Engineer_.
 
 📌 Currently working on - [Pastebin](https://github.com/alibekbirlikbai/Pastebin-backend) and associated projects.
 
@@ -29,7 +29,7 @@ Hi, my name is Alibek, and i'm a Software Engineer from Kazakhstan kz. Dedicated
 
 
 <br/>
-📫 How to reach me: alibekbirlikbai@gmail.com
+📫 How to reach me: <a href="mailto:alibekbirlikbai@gmail.com">alibekbirlikbai@gmail.com</a>
 
 🔍 More about me you can find here: https://alibekbirlikbai.github.io
 

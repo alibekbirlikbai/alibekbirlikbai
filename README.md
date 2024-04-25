@@ -15,7 +15,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 Hi, my name is Alibek, and i'm a _Software Engineer_ from Kazakhstan kz. Dedicated to being a _Fullstack Engineer_.
 
-📌 Currently working on - [Pastebin](https://github.com/alibekbirlikbai/Pastebin-backend) and associated projects.
+📌 Currently working on - [Pastebin](https://github.com/alibekbirlikbai/Pastebin-backend), [microservice-expenses](https://github.com/alibekbirlikbai/microservice-expenses), and associated projects.
 
 
 

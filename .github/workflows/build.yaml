@@ -28,14 +28,15 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Update README
         env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: |-
           python build_readme.py
           cat README.md
       - name: Commit and push if changed
-        run: |
+        run: |-
+          git diff
           git config --global user.email "actions@users.noreply.github.com"
           git config --global user.name "README-bot"
-          git add .
-          git commit -m "Auto-update changes" || exit 0
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/alibekbirlikbai/alibekbirlikbai.git HEAD:main
+          git add -A
+          git commit -m "Updated content" || exit 0
+          git push

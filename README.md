@@ -12,9 +12,9 @@ More [recent commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/ma
 </td><td valign="top" width="34%">
 
 ### Recent pull-requests
-<!-- blog recent_pull_requests -->
+<!-- recent_pull_requests starts -->
 ...
-<!-- blog recent_pull_requests -->
+<!-- recent_pull_requests ends -->
 More [recent pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/pull_requests.md)
 </td><td valign="top" width="33%">
 

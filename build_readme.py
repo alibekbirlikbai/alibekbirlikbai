@@ -10,9 +10,6 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 TOKEN = os.environ.get("REPO_TOKEN", "")
 
-# List of repositories to skip
-SKIP_REPOS = set()
-
 # Define GraphQL queries
 GRAPHQL_REPO_QUERY = """
 query {
@@ -28,7 +25,7 @@ query {
         url
         commits: object(expression: "HEAD") {
           ... on Commit {
-            history(first: 5) {
+            history(first: 15) {  # Limit to 15 commits
               nodes {
                 message
                 committedDate
@@ -38,6 +35,7 @@ query {
                     login
                   }
                 }
+                oid  # Use oid for commit SHA
               }
             }
           }
@@ -90,19 +88,18 @@ def fetch_commits(oauth_token):
         )
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
+            repo_name = repo["name"]
             for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
-                author = commit.get("author")
-                author_login = author.get("user", {}).get("login") if author else "unknown"
-                commits.append(
-                    {
-                        "message": commit["message"],
-                        "date": commit["committedDate"].split("T")[0],
-                        "url": commit["url"],
-                        # Assuming 'sha' might not be present, add a default value or handle it as needed
-                        "sha": commit.get("oid", "unknown"),  # Use 'oid' if 'sha' is not present
-                        "author": author_login,
-                    }
-                )
+                if commit.get("author", {}).get("user", {}).get("login") != "readme-bot":
+                    commits.append(
+                        {
+                            "repo": repo_name,
+                            "message": commit["message"],
+                            "date": commit["committedDate"].split("T")[0],
+                            "url": commit["url"],
+                            "sha": commit["oid"],
+                        }
+                    )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
@@ -174,15 +171,16 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "[{message}]({url}) - {date}".format(
-                message=commit["message"],
-                url=commit["url"],
-                date=commit["date"],
+            "### {}:\n- [{}]({}) - {}: {}".format(
+                commit["repo"],
+                commit["message"],
+                commit["url"],
+                commit["date"],
+                commit["sha"],
             )
-            for commit in commits
+            for commit in commits[:15]  # Limit to 15 commits
         ]
     )
-
 
     pull_requests_md = "\n\n".join(
         [
@@ -208,9 +206,12 @@ if __name__ == "__main__":
     # Write out commits.md
     commits_md_full = "\n".join(
         [
-            (
-                "* **[{message}]({url})** - {date}"
-            ).format(**commit)
+            "* **[{}]({})** - {}: {}".format(
+                commit["message"],
+                commit["url"],
+                commit["date"],
+                commit["sha"],
+            )
             for commit in commits
         ]
     )
@@ -219,9 +220,11 @@ if __name__ == "__main__":
     # Write out pull_requests.md
     pull_requests_md_full = "\n".join(
         [
-            (
-                "* **[{title}]({url})** - {created_at}"
-            ).format(**pr)
+            "* **[{}]({})** - {}".format(
+                pr["title"],
+                pr["url"],
+                pr["created_at"],
+            )
             for pr in pull_requests
         ]
     )
@@ -230,9 +233,13 @@ if __name__ == "__main__":
     # Write out releases.md
     releases_md_full = "\n".join(
         [
-            (
-                "* **[{repo}]({repo_url})**: [{release}]({url}) - {published_day}"
-            ).format(**release)
+            "* **[{}]({})**: [{}]({}) - {}".format(
+                release["repo"],
+                release["repo_url"],
+                release["release"],
+                release["url"],
+                release["published_day"],
+            )
             for release in releases
         ]
     )

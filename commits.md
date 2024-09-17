@@ -1,3 +1,3 @@
-<!-- recent_releases starts -->
+<!-- recent_commits starts -->
 ...
-<!-- recent_releases ends -->
+<!-- recent_commits ends -->

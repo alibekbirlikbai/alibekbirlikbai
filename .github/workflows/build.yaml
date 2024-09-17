@@ -33,10 +33,11 @@ jobs:
           python build_readme.py
           cat README.md
       - name: Commit and push if changed
-        run: |-
+        run: |
           git diff
           git config --global user.email "actions@users.noreply.github.com"
           git config --global user.name "README-bot"
           git add -A
           git commit -m "Updated content" || exit 0
-          git push
+          git push https://alibekbirlikbai:${{ secrets.REPO_TOKEN }}@github.com/alibekbirlikbai/alibekbirlikbai.git 
+          HEAD:main

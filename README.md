@@ -1,34 +1,30 @@
-<h1 align="center">Hello there, I'm <a href="https://alibekbirlikbai.github.io/" target="_blank">Alibek Birlikbai</a> <img
-src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" /></h1>
-<br>
-
-<p align="center">
-  <a href="https://alibekbirlikbai.github.io" target="_blank">My Site</a>
-  ·
-  <a href="https://alibekbirlikbai.github.io/resume">current CV</a>
-  ·
-  <a href="https://alibekbirlikbai.github.io/projects">Projects</a>
-</p>
-<br>
+[![linkedin](https://img.shields.io/badge/-Alibek_Birlikbai-161616?style=flat-square&labelColor=161616&logo=LinkedIn&logoColor=white&color=161616)](https://www.linkedin.com/in/alibek-birlikbai/)  
+[![telegram](https://img.shields.io/badge/-@alibekbirlikbai-161616?style=flat-square&labelColor=161616&logo=Telegram&logoColor=white&color=161616)](https://t.me/alibekbirlikbai)  
 
 
+Currently working on [Datasette](https://datasette.io/) and associated projects. Read [my blog](https://simonwillison.net/) or <a href="https://fedi.simonwillison.net/@simon">follow `@simon@simonwillison.net` on Mastodon</a>.
 
-Hi, my name is Alibek, and i'm a _Software Engineer_ from Kazakhstan kz. Dedicated to being a _Fullstack Engineer_.
+<table><tr><td valign="top" width="33%">
 
-📌 Currently working on - [Pastebin](https://github.com/alibekbirlikbai/Pastebin-backend), and associated projects.
+### Recent releases
+<!-- recent_releases starts -->
+...
+<!-- recent_releases ends -->
+More [recent releases](https://github.com/simonw/simonw/blob/main/releases.md)
+</td><td valign="top" width="34%">
 
+### On my blog
+<!-- blog starts -->
+...
+<!-- blog ends -->
+More on [simonwillison.net](https://simonwillison.net/)
+</td><td valign="top" width="33%">
 
+### TIL
+<!-- tils starts -->
+...
+<!-- tils ends -->
+More on [til.simonwillison.net](https://til.simonwillison.net/)
+</td></tr></table>
 
-
-### Recent Releases
-
-- <a href='https://github.com/alibekbirlikbai/Pastebin-backend/releases/tag/v1.1.0' target='_blank'>Pastebin-backend@v1.1.0</a> - 2024-03-23
-- <a href='https://github.com/alibekbirlikbai/Pastebin-backend/releases/tag/v1.0.0' target='_blank'>Pastebin-backend@v1.0.0</a> - 2024-03-18
-- <a href='https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/releases/tag/v1.1' target='_blank'>alibekbirlikbai.github.io@v1.1</a> - 2024-03-16
-
-
-
-<br/>
-📫 How to reach me: <a href="https://t.me/alibekbirlikbai">telegram@alibekbirlikbai</a>
-
-🔍 stack / experience / projects: https://alibekbirlikbai.github.io
+<a href="https://github.com/simonw/simonw/actions"><img src="https://github.com/simonw/simonw/workflows/Build%20README/badge.svg" align="right" alt="Build README"></a> <a href="https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/">How this works</a>

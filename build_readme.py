@@ -91,12 +91,13 @@ def fetch_commits(oauth_token):
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
+                author = commit.get("author", {}).get("user", {})
                 commits.append(
                     {
                         "message": commit["message"],
                         "date": commit["committedDate"].split("T")[0],
                         "url": commit["url"],
-                        "author": commit["author"]["user"]["login"],
+                        "author": author.get("login", "unknown"),  # Default to 'unknown' if no author is found
                     }
                 )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]

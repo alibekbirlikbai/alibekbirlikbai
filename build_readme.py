@@ -12,14 +12,7 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 TOKEN = os.environ.get("REPO_TOKEN", "")
 
 SKIP_REPOS = {
-    "playing-with-actions",
-    "simonw-readthedocs-experiments",
-    "datasette-comments",
-    "datasette-plot",
-    "datasette-write-ui",
-    "datasette-litestream",
-    "datasette-metadata-editable",
-    "datasette-short-links",
+    ""
 }
 
 
@@ -36,7 +29,8 @@ def replace_chunk(content, marker, chunk, inline=False):
 
 GRAPHQL_SEARCH_QUERY = """
 query {
-  search(first: 100, type:REPOSITORY, query:"is:public owner:simonw owner:dogsheep owner:datasette sort:updated", after: AFTER) {
+  search(first: 100, type:REPOSITORY, query:"is:public owner:alibekbirlikbai
+  sort:updated", after: AFTER) {
     pageInfo {
       hasNextPage
       endCursor

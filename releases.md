@@ -1,3 +1,2 @@
-<!-- recent_releases starts -->
-...
-<!-- recent_releases ends -->
+* **[alibekbirlikbai.github.io](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io)**: [v1.1 (Sidebar position-sticky)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/releases/tag/v1.1) - 2024-03-16
+* **[pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend)**: [v1.1.0](https://github.com/alibekbirlikbai/pastebin-backend/releases/tag/v1.1.0) - 2024-03-23

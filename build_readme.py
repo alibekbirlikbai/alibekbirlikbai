@@ -1,4 +1,5 @@
 from python_graphql_client import GraphqlClient
+import httpx
 import json
 import pathlib
 import re
@@ -9,17 +10,11 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 TOKEN = os.environ.get("REPO_TOKEN", "")
 
-def replace_chunk(content, marker, chunk, inline=False):
-    r = re.compile(
-        r"<!\-\- {} starts \-\->.*<!\-\- {} ends \-\->".format(marker, marker),
-        re.DOTALL,
-    )
-    if not inline:
-        chunk = "\n{}\n".format(chunk)
-    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(marker, chunk, marker)
-    return r.sub(chunk, content)
+# List of repositories to skip
+SKIP_REPOS = set()
 
-GRAPHQL_SEARCH_QUERY = """
+# Define GraphQL queries
+GRAPHQL_REPO_QUERY = """
 query {
   search(first: 100, type:REPOSITORY, query:"is:public owner:alibekbirlikbai sort:updated", after: AFTER) {
     pageInfo {
@@ -30,8 +25,30 @@ query {
       __typename
       ... on Repository {
         name
-        description
         url
+        commits: object(expression: "HEAD") {
+          ... on Commit {
+            history(first: 5) {
+              nodes {
+                message
+                committedDate
+                url
+                author {
+                  user {
+                    login
+                  }
+                }
+              }
+            }
+          }
+        }
+        pullRequests: pullRequests(last: 5, states: OPEN) {
+          nodes {
+            title
+            url
+            createdAt
+          }
+        }
         releases(orderBy: {field: CREATED_AT, direction: DESC}, first: 1) {
           totalCount
           nodes {
@@ -46,13 +63,71 @@ query {
 }
 """
 
+def replace_chunk(content, marker, chunk, inline=False):
+    r = re.compile(
+        r"<!-- {} starts -->.*<!-- {} ends -->".format(marker, marker),
+        re.DOTALL,
+    )
+    if not inline:
+        chunk = "\n{}\n".format(chunk)
+    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(marker, chunk, marker)
+    return r.sub(chunk, content)
+
 def make_query(after_cursor=None):
-    return GRAPHQL_SEARCH_QUERY.replace(
+    return GRAPHQL_REPO_QUERY.replace(
         "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
     )
 
+def fetch_commits(oauth_token):
+    commits = []
+    has_next_page = True
+    after_cursor = None
+
+    while has_next_page:
+        data = client.execute(
+            query=make_query(after_cursor),
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
+        )
+        repos = data["data"]["search"]["nodes"]
+        for repo in repos:
+            for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
+                commits.append(
+                    {
+                        "message": commit["message"],
+                        "date": commit["committedDate"].split("T")[0],
+                        "url": commit["url"],
+                        "author": commit["author"]["user"]["login"],
+                    }
+                )
+        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
+        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    return commits
+
+def fetch_pull_requests(oauth_token):
+    pull_requests = []
+    has_next_page = True
+    after_cursor = None
+
+    while has_next_page:
+        data = client.execute(
+            query=make_query(after_cursor),
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
+        )
+        repos = data["data"]["search"]["nodes"]
+        for repo in repos:
+            for pr in repo.get("pullRequests", {}).get("nodes", []):
+                pull_requests.append(
+                    {
+                        "title": pr["title"],
+                        "url": pr["url"],
+                        "created_at": pr["createdAt"].split("T")[0],
+                    }
+                )
+        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
+        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    return pull_requests
+
 def fetch_releases(oauth_token):
-    repos = []
     releases = []
     has_next_page = True
     after_cursor = None
@@ -62,15 +137,13 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        repo_nodes = data["data"]["search"]["nodes"]
-        for repo in repo_nodes:
+        repos = data["data"]["search"]["nodes"]
+        for repo in repos:
             if repo["releases"]["totalCount"]:
-                repos.append(repo)
                 releases.append(
                     {
                         "repo": repo["name"],
                         "repo_url": repo["url"],
-                        "description": repo["description"],
                         "release": repo["releases"]["nodes"][0]["name"]
                         .replace(repo["name"], "")
                         .strip(),
@@ -79,23 +152,83 @@ def fetch_releases(oauth_token):
                             "publishedAt"
                         ].split("T")[0],
                         "url": repo["releases"]["nodes"][0]["url"],
-                        "total_releases": repo["releases"]["totalCount"],
                     }
                 )
+        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-        has_next_page = after_cursor
     return releases
 
 if __name__ == "__main__":
     readme = root / "README.md"
+    commits_file = root / "commits.md"
+    pull_requests_file = root / "pull_requests.md"
+    releases_file = root / "releases.md"
+
+    commits = fetch_commits(TOKEN)
+    pull_requests = fetch_pull_requests(TOKEN)
     releases = fetch_releases(TOKEN)
-    releases.sort(key=lambda r: r["published_at"], reverse=True)
-    md = "\n\n".join(
+
+    commits_md = "\n\n".join(
+        [
+            "[{message}](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/{sha}) - {date}".format(
+                message=commit["message"],
+                sha=commit["sha"],
+                date=commit["date"],
+            )
+            for commit in commits
+        ]
+    )
+
+    pull_requests_md = "\n\n".join(
+        [
+            "[{title}]({url}) - {created_at}".format(**pr)
+            for pr in pull_requests
+        ]
+    )
+
+    releases_md = "\n\n".join(
         [
             "[{repo} {release}]({url}) - {published_day}".format(**release)
             for release in releases[:8]
         ]
     )
+
     readme_contents = readme.open().read()
-    rewritten = replace_chunk(readme_contents, "recent_releases", md)
-    readme.open("w").write(rewritten)
+    readme_contents = replace_chunk(readme_contents, "recent_commits", commits_md)
+    readme_contents = replace_chunk(readme_contents, "recent_pull_requests", pull_requests_md)
+    readme_contents = replace_chunk(readme_contents, "recent_releases", releases_md)
+
+    readme.open("w").write(readme_contents)
+
+    # Write out commits.md
+    commits_md_full = "\n".join(
+        [
+            (
+                "* **[{message}]({url})** - {date}"
+            ).format(**commit)
+            for commit in commits
+        ]
+    )
+    commits_file.open("w").write(commits_md_full)
+
+    # Write out pull_requests.md
+    pull_requests_md_full = "\n".join(
+        [
+            (
+                "* **[{title}]({url})** - {created_at}"
+            ).format(**pr)
+            for pr in pull_requests
+        ]
+    )
+    pull_requests_file.open("w").write(pull_requests_md_full)
+
+    # Write out releases.md
+    releases_md_full = "\n".join(
+        [
+            (
+                "* **[{repo}]({repo_url})**: [{release}]({url}) - {published_day}"
+            ).format(**release)
+            for release in releases
+        ]
+    )
+    releases_file.open("w").write(releases_md_full)

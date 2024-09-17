@@ -98,7 +98,9 @@ def fetch_commits(oauth_token):
                         "message": commit["message"],
                         "date": commit["committedDate"].split("T")[0],
                         "url": commit["url"],
-                        "author": author_login,  # Default to 'unknown' if no author is found
+                        # Assuming 'sha' might not be present, add a default value or handle it as needed
+                        "sha": commit.get("oid", "unknown"),  # Use 'oid' if 'sha' is not present
+                        "author": author_login,
                     }
                 )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
@@ -172,14 +174,15 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "[{message}](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/{sha}) - {date}".format(
+            "[{message}]({url}) - {date}".format(
                 message=commit["message"],
-                sha=commit["sha"],
+                url=commit["url"],
                 date=commit["date"],
             )
             for commit in commits
         ]
     )
+
 
     pull_requests_md = "\n\n".join(
         [

@@ -9,7 +9,7 @@ import os
 root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
-TOKEN = os.environ.get("SIMONW_TOKEN", "")
+TOKEN = os.environ.get("REPO_TOKEN", "")
 
 SKIP_REPOS = {
     "playing-with-actions",

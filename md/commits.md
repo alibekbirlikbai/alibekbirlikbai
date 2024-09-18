@@ -1,4 +1,7 @@
-* **[feat(dev): fix auto-deployment for 'test' branch](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/51891eaeac43314b492e2570671136ac438eeb49)** - 2024-09-18: 51891eaeac43314b492e2570671136ac438eeb49
+* **[Merge remote-tracking branch 'origin/test' into test
+
+# Conflicts:
+#	README.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/f44a65ce807ad6599a6a98c2c4870a0ef14d384c)** - 2024-09-18: f44a65ce807ad6599a6a98c2c4870a0ef14d384c
 * **[feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81)** - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81
 * **[feat: configure api-gateway && rename endpoints (REST APIs convention)](https://github.com/alibekbirlikbai/microservice-expenses/commit/e5019817e5e8f8d4d8bdbfb780b840fd1b3090ac)** - 2024-04-25: e5019817e5e8f8d4d8bdbfb780b840fd1b3090ac
 * **[feat(flyway-integration): connect to mysql](https://github.com/alibekbirlikbai/microservice-expenses/commit/cd46f01861a68876f97fc66df214741161b25141)** - 2024-08-31: cd46f01861a68876f97fc66df214741161b25141

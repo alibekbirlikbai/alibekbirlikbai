@@ -84,6 +84,11 @@ def fetch_commits(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
+        print(json.dumps(data, indent=2))
+        if "data" not in data:
+            print("Error fetching data: ", data)
+            break
+
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
@@ -92,6 +97,7 @@ def fetch_commits(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
+            all_commits = []
             # Iterate over all branches (refs)
             for ref in repo.get("refs", {}).get("nodes", []):
                 for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
@@ -101,7 +107,7 @@ def fetch_commits(oauth_token):
                         if user is not None:
                             login = user.get("login")
                             if login != "readme-bot":
-                                commits.append(
+                                all_commits.append(
                                     {
                                         "repo": repo_name,
                                         "message": commit.get("message", "No message"),
@@ -110,6 +116,12 @@ def fetch_commits(oauth_token):
                                         "sha": commit.get("oid", "No SHA"),
                                     }
                                 )
+
+            # Select the latest commit from all branches
+            if all_commits:
+                latest_commit = max(all_commits, key=lambda x: x["date"])
+                commits.append(latest_commit)
+
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
@@ -207,12 +219,13 @@ if __name__ == "__main__":
 
     pull_requests_md = "\n\n".join(
         [
-            "- [{}]({}) - {}".format(
+            "- [{} - {}]({}) - {}".format(
+                pr["repo"],
                 pr["title"],
                 pr["url"],
                 pr["created_at"]
             )
-            for pr in pull_requests
+            for pr in pull_requests[:10]
         ]
     )
 
@@ -224,7 +237,7 @@ if __name__ == "__main__":
                 release["url"],
                 release["published_day"]
             )
-            for release in releases[:8]
+            for release in releases[:10]
         ]
     )
 

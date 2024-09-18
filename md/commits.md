@@ -1,7 +1,3 @@
-* **[feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81)** - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81
-* **[docs: minor change](https://github.com/alibekbirlikbai/microservice-expenses/commit/3301689094427a513501fd1828f66ef4bc3dd838)** - 2024-04-30: 3301689094427a513501fd1828f66ef4bc3dd838
-* **[config: add config-server (initial)](https://github.com/alibekbirlikbai/jwt-backend/commit/e208832daf3fbeb65d648204bf8eddd28fae1d48)** - 2024-04-28: e208832daf3fbeb65d648204bf8eddd28fae1d48
-* **[style: add minor style change](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/b2fe42d2c721fbe6485dcb80d5f31c64091a34ea)** - 2024-05-06: b2fe42d2c721fbe6485dcb80d5f31c64091a34ea
-* **[test deploy](https://github.com/alibekbirlikbai/pastebin/commit/d89eeb047523aeed7752639beaa82effb86fc922)** - 2024-04-10: d89eeb047523aeed7752639beaa82effb86fc922
-* **[docs: minor change in Readme (v1.1.0)](https://github.com/alibekbirlikbai/pastebin-backend/commit/ee84106366d477c69128100efc35d4bb58443fa8)** - 2024-04-03: ee84106366d477c69128100efc35d4bb58443fa8
-* **[docs: add link to deployed URL](https://github.com/alibekbirlikbai/proxy-server/commit/150c67582b00233b8e7eb7b18a55e0e4f0f7efdc)** - 2024-03-16: 150c67582b00233b8e7eb7b18a55e0e4f0f7efdc
+<!-- recent_commits starts -->
+...
+<!-- recent_commits ends -->

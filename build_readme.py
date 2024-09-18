@@ -84,11 +84,6 @@ def fetch_commits(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print(json.dumps(data, indent=2))
-        if "data" not in data:
-            print("Error fetching data: ", data)
-            break
-
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
@@ -97,7 +92,6 @@ def fetch_commits(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            all_commits = []
             # Iterate over all branches (refs)
             for ref in repo.get("refs", {}).get("nodes", []):
                 for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
@@ -107,21 +101,15 @@ def fetch_commits(oauth_token):
                         if user is not None:
                             login = user.get("login")
                             if login != "readme-bot":
-                                all_commits.append(
+                                commits.append(
                                     {
                                         "repo": repo_name,
                                         "message": commit.get("message", "No message"),
-                                        "date": commit.get("committedDate", "No date"),
+                                        "date": commit.get("committedDate", "No date").split("T")[0],
                                         "url": commit.get("url", "No URL"),
                                         "sha": commit.get("oid", "No SHA"),
                                     }
                                 )
-
-            # Select the latest commit from all branches
-            if all_commits:
-                latest_commit = max(all_commits, key=lambda x: x["date"])
-                commits.append(latest_commit)
-
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
@@ -206,27 +194,36 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "### {}:\n- [{}]({}) - {}: {}".format(
+            "- [{} - {}](https://github.com/{}/commit/{}) - {}".format(
                 commit["repo"],
                 commit["message"],
-                commit["url"],
-                commit["date"],
+                commit["repo"],
                 commit["sha"],
+                commit["date"].split("T")[0],
             )
-            for commit in commits[:10]  # Limit to 10 commits
+            for commit in commits[:10]
         ]
     )
 
     pull_requests_md = "\n\n".join(
         [
-            "[{title}]({url}) - {created_at}".format(**pr)
+            "- [{}]({}) - {}".format(
+                pr["title"],
+                pr["url"],
+                pr["created_at"]
+            )
             for pr in pull_requests
         ]
     )
 
     releases_md = "\n\n".join(
         [
-            "[{repo} {release}]({url}) - {published_day}".format(**release)
+            "- [{} - {}]({}) - {}".format(
+                release["repo"],
+                release["release"],
+                release["url"],
+                release["published_day"]
+            )
             for release in releases[:8]
         ]
     )

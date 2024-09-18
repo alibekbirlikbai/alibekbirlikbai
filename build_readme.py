@@ -254,7 +254,7 @@ if __name__ == "__main__":
         [
             "* **[{}]({})** - {}: {}".format(
                 commit["message"],
-                commit["url"],
+                commit["commit_url"],
                 commit["date"],
                 commit["sha"],
             )

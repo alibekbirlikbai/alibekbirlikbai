@@ -18,21 +18,21 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai - feat(dev): fix commit url](https://github.com/Unknown Author/alibekbirlikbai/commit/6442847d3e8fec7c5ccdf61ca9e54d560e6988ab) - 2024-09-18
+- [alibekbirlikbai - feat(dev): fix commit url](https://github.com/None/alibekbirlikbai/commit/ed12bb158ecb389f6882cf02233e5db40623a1e9) - 2024-09-18
 
-- [university-bachelor - feat(front-end): re-upload](https://github.com/Unknown Author/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
+- [university-bachelor - feat(front-end): re-upload](https://github.com/None/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 
-- [microservice-expenses - feat(jooq-integration): currency-service setup jooq configuration](https://github.com/Unknown Author/microservice-expenses/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - 2024-09-06
+- [microservice-expenses - feat(jooq-integration): currency-service setup jooq configuration](https://github.com/None/microservice-expenses/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - 2024-09-06
 
-- [jwt-backend - feat: (auth-service) add authenticate() endpoint](https://github.com/Unknown Author/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - 2024-05-09
+- [jwt-backend - feat: (auth-service) add authenticate() endpoint](https://github.com/None/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - 2024-05-09
 
-- [alibekbirlikbai.github.io - style: add minor style change](https://github.com/Unknown Author/alibekbirlikbai.github.io/commit/b2fe42d2c721fbe6485dcb80d5f31c64091a34ea) - 2024-05-06
+- [alibekbirlikbai.github.io - style: add minor style change](https://github.com/None/alibekbirlikbai.github.io/commit/b2fe42d2c721fbe6485dcb80d5f31c64091a34ea) - 2024-05-06
 
-- [pastebin - Updates](https://github.com/Unknown Author/pastebin/commit/cc8addde9c7b162a693fcde84b5ce5b717a96e54) - 2024-04-10
+- [pastebin - Updates](https://github.com/None/pastebin/commit/cc8addde9c7b162a693fcde84b5ce5b717a96e54) - 2024-04-10
 
-- [pastebin-backend - feat: resolve cors configuration problem](https://github.com/Unknown Author/pastebin-backend/commit/d3d1f3f2af371254075460dbf1be751d046866ab) - 2024-04-05
+- [pastebin-backend - feat: resolve cors configuration problem](https://github.com/None/pastebin-backend/commit/d3d1f3f2af371254075460dbf1be751d046866ab) - 2024-04-05
 
-- [proxy-server - docs: add link to deployed URL](https://github.com/Unknown Author/proxy-server/commit/150c67582b00233b8e7eb7b18a55e0e4f0f7efdc) - 2024-03-16
+- [proxy-server - docs: add link to deployed URL](https://github.com/None/proxy-server/commit/150c67582b00233b8e7eb7b18a55e0e4f0f7efdc) - 2024-03-16
 <!-- recent_commits ends -->
 Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

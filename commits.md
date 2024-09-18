@@ -1,7 +1,3 @@
-* **[Merge remote-tracking branch 'origin/main'
-
-# Conflicts:
-#	README.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/7919a34c89ae80297c8a13f6af3c96e9fd28d9c0)** - 2024-09-18: 7919a34c89ae80297c8a13f6af3c96e9fd28d9c0
 * **[Update README.md](https://github.com/alibekbirlikbai/full-stack/commit/e445d14007046c080c2a475ce0d599d8b27203d7)** - 2024-09-17: e445d14007046c080c2a475ce0d599d8b27203d7
 * **[Update README.md](https://github.com/alibekbirlikbai/social-network-django/commit/654b609588051e642d79393b2854a0411ef9e719)** - 2024-09-17: 654b609588051e642d79393b2854a0411ef9e719
 * **[Update README.md](https://github.com/alibekbirlikbai/news-api/commit/010c7d13a787461452fccdfbd1e9fdfd082a3180)** - 2024-04-10: 010c7d13a787461452fccdfbd1e9fdfd082a3180

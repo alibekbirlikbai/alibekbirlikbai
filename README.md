@@ -6,12 +6,6 @@
 
 ### Недавние commits
 <!-- recent_commits starts -->
-### alibekbirlikbai:
-- [Merge remote-tracking branch 'origin/main'
-
-# Conflicts:
-#	README.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/7919a34c89ae80297c8a13f6af3c96e9fd28d9c0) - 2024-09-18: 7919a34c89ae80297c8a13f6af3c96e9fd28d9c0
-
 ### full-stack:
 - [Update README.md](https://github.com/alibekbirlikbai/full-stack/commit/e445d14007046c080c2a475ce0d599d8b27203d7) - 2024-09-17: e445d14007046c080c2a475ce0d599d8b27203d7
 

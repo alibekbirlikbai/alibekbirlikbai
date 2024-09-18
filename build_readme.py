@@ -209,7 +209,7 @@ if __name__ == "__main__":
             "- [{} - {}](https://github.com/{}/{}/commit/{}) - {}".format(
                 commit["repo"],
                 commit["message"],
-                commit["name"],
+                commit["author"]["user"]["login"],  # Correct key for the username
                 commit["repo"],
                 commit["sha"],
                 commit["date"].split("T")[0],

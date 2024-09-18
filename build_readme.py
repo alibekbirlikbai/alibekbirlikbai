@@ -206,9 +206,10 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "- [{} - {}](https://github.com/{}/commit/{}) - {}".format(
+            "- [{} - {}](https://github.com/{}/{}/commit/{}) - {}".format(
                 commit["repo"],
                 commit["message"],
+                commit["name"],
                 commit["repo"],
                 commit["sha"],
                 commit["date"].split("T")[0],

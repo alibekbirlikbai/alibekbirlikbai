@@ -1,4 +1,4 @@
-* **[feat(dev): fix commit url](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/ed12bb158ecb389f6882cf02233e5db40623a1e9)** - 2024-09-18: ed12bb158ecb389f6882cf02233e5db40623a1e9
+* **[feat(dev): fix commit url](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/c2bb819d25dd5fbc125dec2bb7546efbcac747a9)** - 2024-09-18: c2bb819d25dd5fbc125dec2bb7546efbcac747a9
 * **[feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81)** - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81
 * **[feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/microservice-expenses/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33)** - 2024-09-06: 1bd69d192c3fa97a024ae322d9c3b1a413bd2d33
 * **[feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84)** - 2024-05-09: 77d7064f9091f6e135295ed44f203647ffcfdb84

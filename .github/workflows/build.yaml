@@ -3,7 +3,8 @@ name: Build README
 on:
   push:
     branches:
-      - main  # Only run this on the main branch
+      - main  # Run on main branch
+      - test  # Run on test branch
   workflow_dispatch:
   schedule:
     - cron: '8,28,48 * * * *'

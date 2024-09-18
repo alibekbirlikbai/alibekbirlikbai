@@ -25,7 +25,7 @@ query {
         url
         commits: object(expression: "HEAD") {
           ... on Commit {
-            history(first: 15) {  # Limit to 15 commits
+            history(first: 1) {  # Limit to 1 commits
               nodes {
                 message
                 committedDate
@@ -40,7 +40,7 @@ query {
             }
           }
         }
-        pullRequests: pullRequests(last: 5, states: OPEN) {
+        pullRequests: pullRequests(last: 1, states: OPEN) {
           nodes {
             title
             url
@@ -86,29 +86,32 @@ def fetch_commits(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
+        print(json.dumps(data, indent=2))  # Add this to see the full response
+        if "data" not in data:
+            print("Error fetching data: ", data)
+            break
+
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
             for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
-                # Add checks for NoneType
-                if commit is not None:
-                    author = commit.get("author")
-                    if author is not None:
-                        user = author.get("user")
-                        if user is not None:
-                            login = user.get("login")
-                            if login != "readme-bot":
-                                commits.append(
-                                    {
-                                        "repo": repo_name,
-                                        "message": commit.get("message", "No message"),
-                                        "date": commit.get("committedDate", "No date").split("T")[0],
-                                        "url": commit.get("url", "No URL"),
-                                        "sha": commit.get("oid", "No SHA"),
-                                    }
-                                )
-    has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
-    after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+                author = commit.get("author")
+                if author is not None:
+                    user = author.get("user")
+                    if user is not None:
+                        login = user.get("login")
+                        if login != "readme-bot":
+                            commits.append(
+                                {
+                                    "repo": repo_name,
+                                    "message": commit.get("message", "No message"),
+                                    "date": commit.get("committedDate", "No date").split("T")[0],
+                                    "url": commit.get("url", "No URL"),
+                                    "sha": commit.get("oid", "No SHA"),
+                                }
+                            )
+        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
+        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
 
 def fetch_pull_requests(oauth_token):

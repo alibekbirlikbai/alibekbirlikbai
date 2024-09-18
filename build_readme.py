@@ -209,7 +209,7 @@ if __name__ == "__main__":
             "- [{} - {}](https://github.com/{}/{}/commit/{}) - {}".format(
                 commit["repo"],
                 commit["message"],
-                commit.get("author", {}).get("user", {}).get("login", "Unknown Author"),  # Safely get the login or default to 'Unknown Author'
+                commit.get("user"),
                 commit["repo"],
                 commit["sha"],
                 commit["date"].split("T")[0],

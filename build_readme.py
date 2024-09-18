@@ -10,6 +10,14 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 TOKEN = os.environ.get("REPO_TOKEN", "")
 
+# List of repositories to exclude from tracking
+EXCLUDED_REPOS = [
+    "full-stack",
+    "social-network-django",
+    "news-api",
+    "ticket-booking-service",
+]
+
 # Define GraphQL queries
 GRAPHQL_REPO_QUERY = """
 query {
@@ -94,6 +102,11 @@ def fetch_commits(oauth_token):
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
+
+            # Skip excluded repositories
+            if repo_name in EXCLUDED_REPOS:
+                continue
+
             for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
                 author = commit.get("author")
                 if author is not None:
@@ -126,6 +139,12 @@ def fetch_pull_requests(oauth_token):
         )
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
+            repo_name = repo["name"]
+
+            # Skip excluded repositories
+            if repo_name in EXCLUDED_REPOS:
+                continue
+
             for pr in repo.get("pullRequests", {}).get("nodes", []):
                 pull_requests.append(
                     {
@@ -150,6 +169,12 @@ def fetch_releases(oauth_token):
         )
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
+            repo_name = repo["name"]
+
+            # Skip excluded repositories
+            if repo_name in EXCLUDED_REPOS:
+                continue
+
             if repo["releases"]["totalCount"]:
                 releases.append(
                     {

@@ -113,7 +113,7 @@ def fetch_commits(oauth_token):
                                         "repo_url": repo_url,  # Add this line to include the repo URL
                                         "message": commit.get("message", "No message"),
                                         "date": commit.get("committedDate", "No date").split("T")[0],
-                                        "url": commit.get("url", "No URL"),
+                                        "commit_url": commit.get("url", "No URL"),
                                         "sha": commit.get("oid", "No SHA"),
                                     }
                                 )
@@ -207,11 +207,11 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "- [[{}]({}) - {}]({}) - {}".format(
+            "- [[{}]({})] - [{}]({}) - {}".format(
                 commit["repo_name"],
                 commit["repo_url"],
                 commit["message"],
-                commit["url"],
+                commit["commit_url"],
                 commit["date"].split("T")[0],
             )
             for commit in commits[:10]
@@ -254,7 +254,7 @@ if __name__ == "__main__":
         [
             "* **[{}]({})** - {}: {}".format(
                 commit["message"],
-                commit["url"],
+                commit["commit_url"],
                 commit["date"],
                 commit["sha"],
             )

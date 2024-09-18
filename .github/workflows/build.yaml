@@ -1,10 +1,11 @@
-name: Build README
+name: Build README and Merge 'Dev' to 'Test'
 
 on:
   push:
     branches:
       - main  # Run on main branch
       - test  # Run on test branch
+      - dev   # Run on dev branch (for merging)
   workflow_dispatch:
   schedule:
     - cron: '8,28,48 * * * *'
@@ -15,10 +16,14 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Required for merge operations
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: "3.10"
+
       - uses: actions/cache@v2
         name: Configure pip caching
         with:
@@ -26,9 +31,11 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+
       - name: Install Python dependencies
         run: |
           python -m pip install -r requirements.txt
+
       - name: Update README, pull requests, and commits
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -38,6 +45,7 @@ jobs:
           cat md/pull_requests.md
           cat md/commits.md
           cat md/releases.md
+
       - name: Commit and push if changed
         run: |-
           git diff
@@ -46,3 +54,29 @@ jobs:
           git add -A
           git commit -m "feat(readme-bot): auto-update content" || exit 0
           git push
+
+  # Job to merge 'dev' branch into 'test' after a push to 'dev'
+  merge_dev_to_test:
+    needs: build
+    if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git for merging
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "push-bot"
+
+      - name: Merge 'dev' into 'test'
+        run: |
+          git checkout test
+          git merge dev --no-ff || exit 1
+          git push origin test
+
+      - name: Trigger test branch deployment
+        run: echo "Triggering deployment for test branch"
+        # Add any deployment-specific logic here, such as calling a deployment script

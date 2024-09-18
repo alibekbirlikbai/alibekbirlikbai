@@ -167,7 +167,8 @@ def fetch_releases(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            if repo["releases"]["totalCount"]:
+            # Check if the 'releases' field exists
+            if "releases" in repo and repo["releases"]["totalCount"] > 0:
                 releases.append(
                     {
                         "repo": repo["name"],

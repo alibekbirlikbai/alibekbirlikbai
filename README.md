@@ -9,7 +9,7 @@
 <!-- recent_commits starts -->
 ...
 <!-- recent_commits ends -->
-Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/commits.md)
+Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 
 </td>
 
@@ -20,7 +20,7 @@
 <!-- recent_pull_requests starts -->
 ...
 <!-- recent_pull_requests ends -->
-Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/pull_requests.md)
+Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
 </td>
 
@@ -35,7 +35,7 @@
 
 [//]: # (<!-- recent_releases ends -->)
 
-[//]: # (Больше [releases]&#40;https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/releases.md&#41;)
+[//]: # (Больше [releases]&#40;https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/releases.md&#41;)
 
 [//]: # (</td>)
 </tr></table>

@@ -84,7 +84,6 @@ def fetch_commits(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print(json.dumps(data, indent=2))
         if "data" not in data:
             print("Error fetching data: ", data)
             break
@@ -92,6 +91,7 @@ def fetch_commits(oauth_token):
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
+            repo_url = repo["url"]  # Add this line to get the repo URL
 
             # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
@@ -109,7 +109,8 @@ def fetch_commits(oauth_token):
                             if login != "readme-bot":
                                 all_commits.append(
                                     {
-                                        "repo": repo_name,
+                                        "repo_name": repo_name,
+                                        "repo_url": repo_url,  # Add this line to include the repo URL
                                         "message": commit.get("message", "No message"),
                                         "date": commit.get("committedDate", "No date").split("T")[0],
                                         "url": commit.get("url", "No URL"),
@@ -206,8 +207,9 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "- [{} - {}]({}) - {}".format(
-                commit["repo"],
+            "- [[{}]({}) - {}]({}) - {}".format(
+                commit["repo_name"],
+                commit["repo_url"],
                 commit["message"],
                 commit["url"],
                 commit["date"].split("T")[0],

@@ -209,7 +209,7 @@ if __name__ == "__main__":
             "- [{} - {}](https://github.com/{}/{}/commit/{}) - {}".format(
                 commit["repo"],
                 commit["message"],
-                commit.get("author"),
+                commit.get("author", {}).get("user", {}).get("login"),
                 commit["repo"],
                 commit["sha"],
                 commit["date"].split("T")[0],

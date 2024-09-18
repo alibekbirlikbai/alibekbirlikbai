@@ -74,7 +74,7 @@ jobs:
       - name: Merge 'dev' into 'test'
         run: |
           git checkout test
-          git merge dev --no-ff || exit 1
+          git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --strategy-option theirs || exit 1)
           git push origin test
 
       - name: Trigger test branch deployment

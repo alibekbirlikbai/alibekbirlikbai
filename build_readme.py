@@ -207,7 +207,7 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "- [[{}]({})] - [{}]({}) - {}".format(
+            "- [{}]({}) - [{}]({}) - {}".format(
                 commit["repo_name"],
                 commit["repo_url"],
                 commit["message"],

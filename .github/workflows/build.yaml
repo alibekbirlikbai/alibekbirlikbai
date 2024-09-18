@@ -35,8 +35,9 @@ jobs:
         run: |-
           python build_readme.py
           cat README.md
-          cat pull_requests.md
-          cat commits.md
+          cat md/pull_requests.md
+          cat md/commits.md
+          cat md/releases.md
       - name: Commit and push if changed
         run: |-
           git diff

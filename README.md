@@ -5,22 +5,22 @@
 <table><tr>
 <td valign="top" width="50%">
 
-### Последние commits
-<!-- recent_commits starts -->
+### Последние pull-requests
+<!-- recent_pull_requests starts -->
 ...
-<!-- recent_commits ends -->
-Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
+<!-- recent_pull_requests ends -->
+Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
 </td>
 
 
 <td valign="top" width="50%">
 
-### Последние pull-requests
-<!-- recent_pull_requests starts -->
+### Последние commits
+<!-- recent_commits starts -->
 ...
-<!-- recent_pull_requests ends -->
-Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
+<!-- recent_commits ends -->
+Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 
 </td>
 

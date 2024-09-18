@@ -86,7 +86,7 @@ def fetch_commits(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print(json.dumps(data, indent=2))  # Add this to see the full response
+        print(json.dumps(data, indent=2))
         if "data" not in data:
             print("Error fetching data: ", data)
             break
@@ -171,9 +171,9 @@ def fetch_releases(oauth_token):
 
 if __name__ == "__main__":
     readme = root / "README.md"
-    commits_file = root / "commits.md"
-    pull_requests_file = root / "pull_requests.md"
-    releases_file = root / "releases.md"
+    commits_file = root / "md" / "commits.md"
+    pull_requests_file = root / "md" / "pull_requests.md"
+    releases_file = root / "md" / "releases.md"
 
     commits = fetch_commits(TOKEN)
     pull_requests = fetch_pull_requests(TOKEN)
@@ -188,7 +188,7 @@ if __name__ == "__main__":
                 commit["date"],
                 commit["sha"],
             )
-            for commit in commits[:15]  # Limit to 15 commits
+            for commit in commits[:10]  # Limit to 10 commits
         ]
     )
 

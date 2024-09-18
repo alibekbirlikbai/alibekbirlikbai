@@ -4,23 +4,35 @@
 
 <table><tr><td valign="top" width="33%">
 
-### Недавние commits
+### Последние commits
 <!-- recent_commits starts -->
 ...
 <!-- recent_commits ends -->
 Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/commits.md)
+
+
 </td><td valign="top" width="34%">
 
-### Недавние pull-requests
+### Последние pull-requests
 <!-- recent_pull_requests starts -->
 ...
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/pull_requests.md)
-</td><td valign="top" width="33%">
 
-### Недавние releases
-<!-- recent_releases starts -->
-...
-<!-- recent_releases ends -->
-Больше [releases](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/releases.md)
-</td></tr></table>
+
+[//]: # (</td><td valign="top" width="33%">)
+
+[//]: # ()
+[//]: # (### Недавние releases)
+
+[//]: # (<!-- recent_releases starts -->)
+
+[//]: # (...)
+
+[//]: # (<!-- recent_releases ends -->)
+
+[//]: # (Больше [releases]&#40;https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/releases.md&#41;)
+
+[//]: # (</td></tr>)
+
+</table>

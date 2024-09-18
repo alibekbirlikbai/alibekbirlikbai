@@ -19,7 +19,10 @@
 ### Последние commits
 <!-- recent_commits starts -->
 ### alibekbirlikbai:
-- [feat(dev): fix auto-deployment for 'test' branch](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/d1acfe73a4bd0efbcf73d071e352fe52079b0550) - 2024-09-18: d1acfe73a4bd0efbcf73d071e352fe52079b0550
+- [Merge remote-tracking branch 'origin/dev' into dev
+
+# Conflicts:
+#	md/commits.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/1068818dce674f4142f6425a93298dad9724f0ee) - 2024-09-18: 1068818dce674f4142f6425a93298dad9724f0ee
 
 ### university-bachelor:
 - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81

@@ -18,7 +18,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai - feat(dev): fix commit url](https://github.com/None/alibekbirlikbai/commit/c2bb819d25dd5fbc125dec2bb7546efbcac747a9) - 2024-09-18
+- [alibekbirlikbai - feat(dev): fix commit url](https://github.com/None/alibekbirlikbai/commit/d0c15638571d7ed8b75aeb565a1ced790658fe83) - 2024-09-18
 
 - [university-bachelor - feat(front-end): re-upload](https://github.com/None/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

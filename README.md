@@ -2,7 +2,8 @@
 [![telegram](https://img.shields.io/badge/-@alibekbirlikbai-161616?style=flat-square&labelColor=161616&logo=Telegram&logoColor=white&color=161616)](https://t.me/alibekbirlikbai)  
 
 
-<table><tr><td valign="top" width="50%">
+<table><tr>
+<td valign="top" width="50%">
 
 ### Последние commits
 <!-- recent_commits starts -->
@@ -10,8 +11,10 @@
 <!-- recent_commits ends -->
 Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/commits.md)
 
+</td>
 
-</td><td valign="top" width="50%">
+
+<td valign="top" width="50%">
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
@@ -19,8 +22,9 @@
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/pull_requests.md)
 
+</td>
 
-[//]: # (</td><td valign="top" width="33%">)
+[//]: # (<td valign="top" width="33%">)
 
 [//]: # ()
 [//]: # (### Недавние releases)
@@ -33,6 +37,5 @@
 
 [//]: # (Больше [releases]&#40;https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/releases.md&#41;)
 
-[//]: # (</td></tr>)
-
-</table>
+[//]: # (</td>)
+</tr></table>

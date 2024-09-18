@@ -19,10 +19,7 @@
 ### Последние commits
 <!-- recent_commits starts -->
 ### alibekbirlikbai:
-- [Merge remote-tracking branch 'origin/test' into test
-
-# Conflicts:
-#	README.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/f44a65ce807ad6599a6a98c2c4870a0ef14d384c) - 2024-09-18: f44a65ce807ad6599a6a98c2c4870a0ef14d384c
+- [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/664b836b589ab94a84849742f358ed56adbeda08) - 2024-09-18: 664b836b589ab94a84849742f358ed56adbeda08
 
 ### university-bachelor:
 - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81

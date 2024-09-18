@@ -31,36 +31,26 @@ query {
       ... on Repository {
         name
         url
-        commits: object(expression: "HEAD") {
-          ... on Commit {
-            history(first: 1) {  # Limit to 1 commits
-              nodes {
-                message
-                committedDate
-                url
-                author {
-                  user {
-                    login
+        refs(first: 100, refPrefix: "refs/heads/") {  # Fetch all branches
+          nodes {
+            name  # Branch name
+            target {
+              ... on Commit {
+                history(first: 1) {  # Get the latest commit for this branch
+                  nodes {
+                    message
+                    committedDate
+                    url
+                    author {
+                      user {
+                        login
+                      }
+                    }
+                    oid  # Use oid for commit SHA
                   }
                 }
-                oid  # Use oid for commit SHA
               }
             }
-          }
-        }
-        pullRequests: pullRequests(last: 1, states: OPEN) {
-          nodes {
-            title
-            url
-            createdAt
-          }
-        }
-        releases(orderBy: {field: CREATED_AT, direction: DESC}, first: 1) {
-          totalCount
-          nodes {
-            name
-            publishedAt
-            url
           }
         }
       }
@@ -107,22 +97,24 @@ def fetch_commits(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            for commit in repo.get("commits", {}).get("history", {}).get("nodes", []):
-                author = commit.get("author")
-                if author is not None:
-                    user = author.get("user")
-                    if user is not None:
-                        login = user.get("login")
-                        if login != "readme-bot":
-                            commits.append(
-                                {
-                                    "repo": repo_name,
-                                    "message": commit.get("message", "No message"),
-                                    "date": commit.get("committedDate", "No date").split("T")[0],
-                                    "url": commit.get("url", "No URL"),
-                                    "sha": commit.get("oid", "No SHA"),
-                                }
-                            )
+            # Iterate over all branches (refs)
+            for ref in repo.get("refs", {}).get("nodes", []):
+                for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
+                    author = commit.get("author")
+                    if author is not None:
+                        user = author.get("user")
+                        if user is not None:
+                            login = user.get("login")
+                            if login != "readme-bot":
+                                commits.append(
+                                    {
+                                        "repo": repo_name,
+                                        "message": commit.get("message", "No message"),
+                                        "date": commit.get("committedDate", "No date").split("T")[0],
+                                        "url": commit.get("url", "No URL"),
+                                        "sha": commit.get("oid", "No SHA"),
+                                    }
+                                )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits

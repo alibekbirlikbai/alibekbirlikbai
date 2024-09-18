@@ -24,18 +24,4 @@
 
 </td>
 
-[//]: # (<td valign="top" width="33%">)
-
-[//]: # ()
-[//]: # (### Недавние releases)
-
-[//]: # (<!-- recent_releases starts -->)
-
-[//]: # (...)
-
-[//]: # (<!-- recent_releases ends -->)
-
-[//]: # (Больше [releases]&#40;https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/releases.md&#41;)
-
-[//]: # (</td>)
 </tr></table>

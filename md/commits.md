@@ -1,4 +1,4 @@
-* **[feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/0d12dd0e24c9215026e148cbc9cacc7ede4f5ec7)** - 2024-09-18: 0d12dd0e24c9215026e148cbc9cacc7ede4f5ec7
+* **[feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/664b836b589ab94a84849742f358ed56adbeda08)** - 2024-09-18: 664b836b589ab94a84849742f358ed56adbeda08
 * **[feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81)** - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81
 * **[feat: configure api-gateway && rename endpoints (REST APIs convention)](https://github.com/alibekbirlikbai/microservice-expenses/commit/e5019817e5e8f8d4d8bdbfb780b840fd1b3090ac)** - 2024-04-25: e5019817e5e8f8d4d8bdbfb780b840fd1b3090ac
 * **[feat(flyway-integration): connect to mysql](https://github.com/alibekbirlikbai/microservice-expenses/commit/cd46f01861a68876f97fc66df214741161b25141)** - 2024-08-31: cd46f01861a68876f97fc66df214741161b25141

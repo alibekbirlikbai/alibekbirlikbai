@@ -97,6 +97,7 @@ def fetch_commits(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
+            all_commits = []
             # Iterate over all branches (refs)
             for ref in repo.get("refs", {}).get("nodes", []):
                 for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
@@ -106,15 +107,21 @@ def fetch_commits(oauth_token):
                         if user is not None:
                             login = user.get("login")
                             if login != "readme-bot":
-                                commits.append(
+                                all_commits.append(
                                     {
                                         "repo": repo_name,
                                         "message": commit.get("message", "No message"),
-                                        "date": commit.get("committedDate", "No date").split("T")[0],
+                                        "date": commit.get("committedDate", "No date"),
                                         "url": commit.get("url", "No URL"),
                                         "sha": commit.get("oid", "No SHA"),
                                     }
                                 )
+
+            # Select the latest commit from all branches
+            if all_commits:
+                latest_commit = max(all_commits, key=lambda x: x["date"])
+                commits.append(latest_commit)
+
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits

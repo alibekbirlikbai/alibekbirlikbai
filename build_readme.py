@@ -55,7 +55,7 @@ query {
             }
           }
         }
-        pullRequests(first: 100, states: CLOSED, orderBy: {field: UPDATED_AT, direction: DESC}) {
+        pullRequests(first: 100, states: [OPEN, CLOSED], orderBy: {field: UPDATED_AT, direction: DESC}) {
           nodes { 
             title
             url

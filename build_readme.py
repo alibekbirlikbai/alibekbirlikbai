@@ -164,7 +164,6 @@ def fetch_pull_requests(oauth_token):
                     )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    print("Fetched pull requests:", pull_requests)  # Add this line to log pull requests
     return pull_requests
 
 def fetch_releases(oauth_token):

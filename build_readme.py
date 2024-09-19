@@ -312,9 +312,24 @@ if __name__ == "__main__":
     readme_contents = replace_chunk(readme_contents, "recent_pull_requests", pull_requests_md)
     readme_contents = replace_chunk(readme_contents, "recent_releases", releases_md)
 
-    readme_contents = replace_chunk(readme_contents, "pull_requests_count", str(total_pull_requests))
-    readme_contents = replace_chunk(readme_contents, "project_with_pull_requests_count", str(len(repo_with_pull_requests)))
-    readme_contents = replace_chunk(readme_contents, "project_count", str(len(repo_with_commits)))
+    readme_contents = replace_chunk(
+        readme_contents,
+        "pull_requests_count",
+        str(total_pull_requests),
+        inline=True,
+    )
+    readme_contents = replace_chunk(
+        readme_contents,
+        "project_with_pull_requests_count",
+        str(len(repo_with_pull_requests)),
+        inline=True,
+    )
+    readme_contents = replace_chunk(
+        readme_contents,
+        "project_count",
+        str(len(repo_with_commits)),
+        inline=True,
+    )
 
     readme.open("w").write(readme_contents)
 

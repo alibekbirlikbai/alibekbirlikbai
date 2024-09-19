@@ -33,12 +33,31 @@ query {
       ... on Repository {
         name
         url
+        pullRequests(first: 100, states: [OPEN, CLOSED, MERGED], orderBy: {field: UPDATED_AT, direction: DESC}) {
+          nodes {
+            title
+            url
+            state
+            updatedAt
+            createdAt
+            closedAt
+            merged
+            mergedAt
+            author {
+              login
+            }
+            commits {
+              totalCount
+            }
+          }
+        }
         refs(first: 100, refPrefix: "refs/heads/") {
           nodes {
             name
             target {
               ... on Commit {
                 history(first: 1) {  # Get the latest commit for this branch
+                  totalCount
                   nodes {
                     message
                     committedDate
@@ -52,21 +71,6 @@ query {
                   }
                 }
               }
-            }
-          }
-        }
-        pullRequests(first: 100, states: [OPEN, CLOSED, MERGED], orderBy: {field: UPDATED_AT, direction: DESC}) {
-          nodes {
-            title
-            url
-            state
-            updatedAt
-            createdAt
-            closedAt
-            merged
-            mergedAt
-            author {
-              login
             }
           }
         }
@@ -91,59 +95,6 @@ def make_query(after_cursor=None):
     return GRAPHQL_REPO_QUERY.replace(
         "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
     )
-
-def fetch_commits(oauth_token):
-    commits = []
-    has_next_page = True
-    after_cursor = None
-
-    while has_next_page:
-        data = client.execute(
-            query=make_query(after_cursor),
-            headers={"Authorization": "Bearer {}".format(oauth_token)},
-        )
-        if "data" not in data:
-            print("Error fetching data: ", data)
-            break
-
-        repos = data["data"]["search"]["nodes"]
-        for repo in repos:
-            repo_name = repo["name"]
-            repo_url = repo["url"]  # Add this line to get the repo URL
-
-            # Skip excluded repositories
-            if repo_name in EXCLUDED_REPOS:
-                continue
-
-            all_commits = []
-            # Iterate over all branches (refs)
-            for ref in repo.get("refs", {}).get("nodes", []):
-                for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
-                    author = commit.get("author")
-                    if author is not None:
-                        user = author.get("user")
-                        if user is not None:
-                            login = user.get("login")
-                            if login != "readme-bot":
-                                all_commits.append(
-                                    {
-                                        "repo_name": repo_name,
-                                        "repo_url": repo_url,  # Add this line to include the repo URL
-                                        "message": commit.get("message", "No message"),
-                                        "date": commit.get("committedDate", "No date").split("T")[0],
-                                        "commit_url": commit.get("url", "No URL"),
-                                        "sha": commit.get("oid", "No SHA"),
-                                    }
-                                )
-
-            # Select the latest commit from all branches
-            if all_commits:
-                latest_commit = max(all_commits, key=lambda x: x["date"])
-                commits.append(latest_commit)
-
-        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
-        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    return commits
 
 def fetch_pull_requests(oauth_token):
     pull_requests = []
@@ -176,6 +127,9 @@ def fetch_pull_requests(oauth_token):
                 # Use mergedAt if the PR is merged, otherwise use updatedAt
                 last_updated = pr.get("mergedAt") if pr.get("merged") else pr.get("updatedAt")
 
+                # Get the total count of commits
+                pr_commits_count = pr.get("commits", {}).get("totalCount", 0)
+
                 pull_requests.append({
                     "repo_name": repo_name,
                     "repo_url": repo_url,
@@ -186,12 +140,70 @@ def fetch_pull_requests(oauth_token):
                     "created_at": pr.get("createdAt", "Unknown").split("T")[0],
                     "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
                     "author": login,
+                    "pr_commits_count": pr_commits_count,
                 })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
 
     return pull_requests
+
+def fetch_commits(oauth_token):
+    commits = []
+    has_next_page = True
+    after_cursor = None
+
+    while has_next_page:
+        data = client.execute(
+            query=make_query(after_cursor),
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
+        )
+        if "data" not in data:
+            print("Error fetching data: ", data)
+            break
+
+        repos = data["data"]["search"]["nodes"]
+        for repo in repos:
+            repo_name = repo["name"]
+            repo_url = repo["url"]  # Get the repo URL
+
+            if repo_name in EXCLUDED_REPOS:
+                continue
+
+            all_commits = []
+            # Iterate over all branches (refs)
+            for ref in repo.get("refs", {}).get("nodes", []):
+                # Get total count for the current branch
+                branch_commits_count = ref.get("target", {}).get("history", {}).get("totalCount", 0)
+
+                for commit in ref.get("target", {}).get("history", {}).get("nodes", []):
+                    author = commit.get("author")
+                    if author is not None:
+                        user = author.get("user")
+                        if user is not None:
+                            login = user.get("login")
+                            if login != "readme-bot":
+                                all_commits.append(
+                                    {
+                                        "repo_name": repo_name,
+                                        "repo_url": repo_url,
+                                        "branch_commits_count": branch_commits_count,  # Add branch commit count here
+                                        "message": commit.get("message", "No message"),
+                                        "date": commit.get("committedDate", "No date").split("T")[0],
+                                        "commit_url": commit.get("url", "No URL"),
+                                        "sha": commit.get("oid", "No SHA"),
+                                    }
+                                )
+
+            # Select the latest commit from all branches
+            if all_commits:
+                latest_commit = max(all_commits, key=lambda x: x["date"])
+                commits.append(latest_commit)
+
+        has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
+        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+
+    return commits
 
 def fetch_releases(oauth_token):
     releases = []
@@ -241,30 +253,34 @@ if __name__ == "__main__":
     pull_requests = fetch_pull_requests(TOKEN)
     releases = fetch_releases(TOKEN)
 
-    commits_md = "\n\n".join(
-        [
-            "- [{}]({}) - [{}]({}) - {}".format(
-                commit["repo_name"],
-                commit["repo_url"],
-                commit["message"],
-                commit["commit_url"],
-                commit["date"].split("T")[0],
-            )
-            for commit in commits[:10]
-        ]
-    )
-
     pull_requests_md = "\n\n".join(
         [
-            "- [{}]({}) - [{}]({}) - {} - {}".format(
+            "- [_@{}_]({}) - ({} commits in pr)\n"
+            "[{}]({}) - {} - {}".format(
                 pr["repo_name"],
                 pr["repo_url"],
+                pr["pr_commits_count"],
                 pr["pr_title"],
                 pr["pr_url"],
                 pr["pr_status"],
                 pr["updated_at"]
             )
             for pr in pull_requests[:10]
+        ]
+    )
+
+    commits_md = "\n\n".join(
+        [
+            "- [_{}_]({}) - ({} commits total)\n"
+            "[{}]({}) - {}".format(
+                commit["repo_name"],
+                commit["repo_url"],
+                commit["branch_commits_count"],
+                commit["message"],
+                commit["commit_url"],
+                commit["date"].split("T")[0],
+            )
+            for commit in commits[:10]
         ]
     )
 
@@ -287,14 +303,28 @@ if __name__ == "__main__":
 
     readme.open("w").write(readme_contents)
 
+
+
+    commits_md = "\n\n".join(
+        [
+            "- [{}]({}) - [{}]({}) - {}".format(
+                commit["repo_name"],
+                commit["repo_url"],
+                commit["message"],
+                commit["commit_url"],
+                commit["date"].split("T")[0],
+            )
+            for commit in commits[:10]
+        ]
+    )
+
     # Write out commits.md
     commits_md_full = "\n".join(
         [
-            "* **[{}]({})** - {}: {}".format(
+            "* **[{}]({}) - ** - {}".format(
                 commit["message"],
                 commit["commit_url"],
-                commit["date"],
-                commit["sha"],
+                commit["date"]
             )
             for commit in commits
         ]

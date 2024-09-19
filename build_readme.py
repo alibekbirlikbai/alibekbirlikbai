@@ -253,16 +253,22 @@ if __name__ == "__main__":
     pull_requests = fetch_pull_requests(TOKEN)
     releases = fetch_releases(TOKEN)
 
+    status_signs = {
+        "open": ":white_check_mark:",
+        "closed": ":x:",
+        "merged": ":ballot_box_with_check:"
+    }
+
     pull_requests_md = "\n\n".join(
         [
-            "- [_@{}_]({}) - ({} commits in pr)\n\n"
-            "[{}]({}) - {} - {}".format(
+            "- [_{}_]({}) - ({} commits total)\n\n"
+            "pr: [{}]({}) - {} - {}".format(
                 pr["repo_name"],
                 pr["repo_url"],
                 pr["pr_commits_count"],
                 pr["pr_title"],
                 pr["pr_url"],
-                pr["pr_status"],
+                status_signs.get(pr["pr_status"], "Unknown status"),
                 pr["updated_at"]
             )
             for pr in pull_requests[:10]
@@ -272,7 +278,7 @@ if __name__ == "__main__":
     commits_md = "\n\n".join(
         [
             "- [_{}_]({}) - ({} commits total)<br/>"
-            "[{}]({}) - {}".format(
+            "commit: [{}]({}) - {}".format(
                 commit["repo_name"],
                 commit["repo_url"],
                 commit["branch_commits_count"],

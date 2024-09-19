@@ -245,7 +245,7 @@ if __name__ == "__main__":
                 commit["commit_url"],
                 commit["date"].split("T")[0],
             )
-            for commit in commits[:10]
+            for commit in commits[:3]
         ]
     )
 
@@ -259,7 +259,7 @@ if __name__ == "__main__":
                 pr["pr_status"],
                 pr["updated_at"]
             )
-            for pr in pull_requests[:10]
+            for pr in pull_requests
         ]
     )
 

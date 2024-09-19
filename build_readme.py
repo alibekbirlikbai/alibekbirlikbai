@@ -33,9 +33,9 @@ query {
       ... on Repository {
         name
         url
-        refs(first: 100, refPrefix: "refs/heads/") {  # Fetch all branches
+        refs(first: 100, refPrefix: "refs/heads/") {
           nodes {
-            name  # Branch name
+            name
             target {
               ... on Commit {
                 history(first: 1) {  # Get the latest commit for this branch
@@ -48,7 +48,7 @@ query {
                         login
                       }
                     }
-                    oid  # Use oid for commit SHA
+                    oid
                   }
                 }
               }
@@ -73,6 +73,7 @@ query {
   }
 }
 """
+
 
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
@@ -148,11 +149,9 @@ def fetch_pull_requests(oauth_token):
     after_cursor = None
 
     while has_next_page:
-        variables = {"cursor": after_cursor}
         data = client.execute(
-            query=GRAPHQL_REPO_QUERY,
-            variables=variables,
-            headers={"Authorization": f"Bearer {oauth_token}"},
+            query=make_query(after_cursor),
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
 
         if "data" not in data:
@@ -168,24 +167,24 @@ def fetch_pull_requests(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            for pr in repo["pullRequests"]["nodes"]:
+            # Fetch pull requests
+            for pr in repo.get("pullRequests", {}).get("nodes", []):
+                login = pr.get("author", {}).get("login", "Unknown")
+
                 pull_requests.append({
-                    "repo": repo_name,
+                    "repo_name": repo_name,
                     "repo_url": repo_url,
-                    "pr_title": pr["title"],
-                    "pr_url": pr["url"],
-                    "pr_state": pr["state"],
-                    "updated_at": pr["updatedAt"].split("T")[0],
-                    "created_at": pr["createdAt"].split("T")[0],
-                    "closed_at": pr["closedAt"].split("T")[0] if pr["closedAt"] else None,
-                    "author": pr["author"]["login"] if pr["author"] else None
+                    "pr_title": pr.get("title", "No title"),
+                    "pr_url": pr.get("url", "No URL"),
+                    "pr_status": pr.get("state", "Unknown"),
+                    "updated_at": pr.get("updatedAt", "Unknown").split("T")[0],
+                    "created_at": pr.get("createdAt", "Unknown").split("T")[0],
+                    "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
+                    "author": login,
                 })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-
-    # Sort pull requests by updated_at in descending order
-    pull_requests.sort(key=lambda x: x["updated_at"], reverse=True)
 
     return pull_requests
 
@@ -253,7 +252,7 @@ if __name__ == "__main__":
     pull_requests_md = "\n\n".join(
         [
             "- [{}]({}) - [{}]({}) - {} - {}".format(
-                pr["repo"],
+                pr["repo_name"],
                 pr["repo_url"],
                 pr["pr_title"],
                 pr["pr_url"],

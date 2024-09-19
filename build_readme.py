@@ -59,7 +59,7 @@ query {
           nodes {
             title
             url
-            state  # Pull request state (OPEN or CLOSED)
+            state 
             createdAt
             updatedAt  
           }
@@ -144,10 +144,17 @@ def fetch_pull_requests(oauth_token):
     after_cursor = None
 
     while has_next_page:
+        query = GRAPHQL_REPO_QUERY.replace(
+            "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
+        )
         data = client.execute(
-            query=make_query(after_cursor),
+            query=query,
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
+        if "data" not in data:
+            print("Error fetching data: ", data)
+            break
+
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]

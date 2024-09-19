@@ -44,8 +44,6 @@
 
 ### Недавние pull-requests
 <!-- recent_pull_requests starts -->
-[feat(readme-bot): auto-update content](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - 2024-09-19
-
 [_2.1_front](https://github.com/alibekbirlikbai/spring-backend/pull/7) - 2022-07-27
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/pull_requests.md)

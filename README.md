@@ -7,7 +7,11 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
+- [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Release](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - CLOSED - 2024-03-01
 
+- [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Develop](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - CLOSED - 2024-03-01
+
+- [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Feature/basic/text save query](https://github.com/alibekbirlikbai/pastebin-backend/pull/1) - CLOSED - 2024-03-01
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -18,7 +22,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): fix fetch_pull_requests](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/1af16c1504a17950d1ab5443ab880dfaede8ed71) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): fix fetch_pull_requests](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/261f0c22c6d6176feaa81608117e5a4bdd43ecad) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

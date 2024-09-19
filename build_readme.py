@@ -21,7 +21,7 @@ EXCLUDED_REPOS = [
 # Define GraphQL queries
 GRAPHQL_REPO_QUERY = """
 query {
-  search(first: 100, type:REPOSITORY, query:"is:public owner:alibekbirlikbai sort:updated", after: AFTER) {
+  search(first: 100, type: REPOSITORY, query: "is:public owner:alibekbirlikbai sort:updated", after: AFTER) {
     pageInfo {
       hasNextPage
       endCursor
@@ -51,6 +51,13 @@ query {
                 }
               }
             }
+          }
+        }
+        pullRequests(first: 10, states: OPEN) {  # Fetch open pull requests
+          nodes {
+            title
+            url
+            createdAt
           }
         }
       }
@@ -141,20 +148,23 @@ def fetch_pull_requests(oauth_token):
         for repo in repos:
             repo_name = repo["name"]
 
-            # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            for pr in repo.get("pullRequests", {}).get("nodes", []):
-                pull_requests.append(
-                    {
-                        "title": pr["title"],
-                        "url": pr["url"],
-                        "created_at": pr["createdAt"].split("T")[0],
-                    }
-                )
+            # Check if pull requests exist in the repo
+            if "pullRequests" in repo:
+                for pr in repo["pullRequests"]["nodes"]:
+                    pull_requests.append(
+                        {
+                            "repo": repo_name,
+                            "title": pr["title"],
+                            "url": pr["url"],
+                            "created_at": pr["createdAt"].split("T")[0],
+                        }
+                    )
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    print("Fetched pull requests:", pull_requests)  # Add this line to log pull requests
     return pull_requests
 
 def fetch_releases(oauth_token):

@@ -77,12 +77,22 @@ jobs:
           git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --strategy-option theirs || exit 1)
           git push origin test
 
+      - name: Set output to trigger deployment
+        id: deploy
+        run: echo "::set-output name=deploy::true"
+
   # Only trigger deployment on the 'test' branch
   deploy_test:
     needs: merge_dev_to_test
-    if: github.ref == 'refs/heads/test'  # Only run on the 'test' branch
+    if: needs.merge_dev_to_test.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the test branch for deployment
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: test  # Ensure we are on the test branch
+
       - name: Trigger test branch deployment
         run: |
           echo "Triggering deployment for test branch"

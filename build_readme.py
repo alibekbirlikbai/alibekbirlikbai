@@ -56,7 +56,7 @@ query {
           }
         }
         pullRequests(first: 100, states: CLOSED, orderBy: {field: UPDATED_AT, direction: DESC}) {
-          nodes {
+          nodes { 
             title
             url
             state

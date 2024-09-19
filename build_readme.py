@@ -181,7 +181,7 @@ def fetch_pull_requests(oauth_token):
                     "repo_url": repo_url,
                     "pr_title": pr.get("title", "No title"),
                     "pr_url": pr.get("url", "No URL"),
-                    "pr_status": "MERGED" if pr.get("merged") else pr.get("state", "Unknown"),
+                    "pr_status": "merged" if pr.get("merged") else pr.get("state", "Unknown").lower(),
                     "updated_at": last_updated.split("T")[0],
                     "created_at": pr.get("createdAt", "Unknown").split("T")[0],
                     "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,

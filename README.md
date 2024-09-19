@@ -9,8 +9,8 @@
 ### full-stack:
 - [Update README.md](https://github.com/alibekbirlikbai/full-stack/commit/e445d14007046c080c2a475ce0d599d8b27203d7) - 2024-09-17: e445d14007046c080c2a475ce0d599d8b27203d7
 
-### social-network-django:
-- [Update README.md](https://github.com/alibekbirlikbai/social-network-django/commit/654b609588051e642d79393b2854a0411ef9e719) - 2024-09-17: 654b609588051e642d79393b2854a0411ef9e719
+### django-backend:
+- [Update README.md](https://github.com/alibekbirlikbai/django-backend/commit/654b609588051e642d79393b2854a0411ef9e719) - 2024-09-17: 654b609588051e642d79393b2854a0411ef9e719
 
 ### news-api:
 - [Update README.md](https://github.com/alibekbirlikbai/news-api/commit/010c7d13a787461452fccdfbd1e9fdfd082a3180) - 2024-04-10: 010c7d13a787461452fccdfbd1e9fdfd082a3180

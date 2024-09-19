@@ -55,10 +55,11 @@ query {
             }
           }
         }
-        pullRequests(first: 10, states: OPEN) {  # Fetch open pull requests
+        pullRequests(first: 100, states: [OPEN, CLOSED]) {  # Fetch both open and closed pull requests
           nodes {
             title
             url
+            state  # Pull request state (OPEN or CLOSED)
             createdAt
             updatedAt  
           }
@@ -162,8 +163,9 @@ def fetch_pull_requests(oauth_token):
                         {
                             "repo": repo_name,
                             "repo_url": repo_url,
-                            "title": pr["title"],
+                            "pr_title": pr["title"],
                             "pr_url": pr["url"],
+                            "pr_status": pr["state"],
                             "created_at": pr["createdAt"].split("T")[0],
                             "updated_at": pr["updatedAt"].split("T")[0],
                         }
@@ -240,11 +242,11 @@ if __name__ == "__main__":
 
     pull_requests_md = "\n\n".join(
         [
-            "- [{}]({}) - [{}]({}) - {}".format(
-                pr["repo_name"],
+            "- [{}]({}) - [{}] - {} - {}".format(
+                pr["repo"],
                 pr["repo_url"],
-                pr["title"],
-                pr["pr_url"],
+                pr["pr_title"],
+                pr["pr_status"],
                 pr["updated_at"]
             )
             for pr in pull_requests[:10]
@@ -288,8 +290,8 @@ if __name__ == "__main__":
     pull_requests_md_full = "\n".join(
         [
             "* **[{}]({})** - {}".format(
-                pr["title"],
-                pr["url"],
+                pr["pr_title"],
+                pr["pr_title"],
                 pr["created_at"],
             )
             for pr in pull_requests

@@ -77,8 +77,13 @@ jobs:
           git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --strategy-option theirs || exit 1)
           git push origin test
 
+  # Only trigger deployment on the 'test' branch
+  deploy_test:
+    needs: merge_dev_to_test
+    if: github.ref == 'refs/heads/test'  # Only run on the 'test' branch
+    runs-on: ubuntu-latest
+    steps:
       - name: Trigger test branch deployment
-        if: github.ref == 'refs/heads/test'
         run: |
           echo "Triggering deployment for test branch"
         # Add any deployment-specific logic here, such as calling a deployment script

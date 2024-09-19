@@ -14,10 +14,10 @@ TOKEN = os.environ.get("REPO_TOKEN", "")
 
 # List of repositories to exclude from tracking
 EXCLUDED_REPOS = [
-    "full-stack",
-    "social-network-django",
+    "jwt-basic",
+    "django-backend",
     "news-api",
-    "ticket-booking-service",
+    "spring-backend",
 ]
 
 # Define GraphQL queries
@@ -55,13 +55,17 @@ query {
             }
           }
         }
-        pullRequests(first: 100, states: [OPEN, CLOSED]) {  # Fetch both open and closed pull requests
+        pullRequests(first: 10, states: [OPEN, CLOSED], orderBy: {field: UPDATED_AT, direction: DESC}) {
           nodes {
             title
             url
-            state 
+            state
+            updatedAt
             createdAt
-            updatedAt  
+            closedAt
+            author {
+              login
+            }
           }
         }
       }
@@ -144,13 +148,13 @@ def fetch_pull_requests(oauth_token):
     after_cursor = None
 
     while has_next_page:
-        query = GRAPHQL_REPO_QUERY.replace(
-            "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
-        )
+        variables = {"cursor": after_cursor}
         data = client.execute(
-            query=query,
-            headers={"Authorization": "Bearer {}".format(oauth_token)},
+            query=GRAPHQL_REPO_QUERY,
+            variables=variables,
+            headers={"Authorization": f"Bearer {oauth_token}"},
         )
+
         if "data" not in data:
             print("Error fetching data: ", data)
             break
@@ -160,27 +164,29 @@ def fetch_pull_requests(oauth_token):
             repo_name = repo["name"]
             repo_url = repo["url"]
 
+            # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            if "pullRequests" in repo and "nodes" in repo["pullRequests"]:
-                for pr in repo["pullRequests"]["nodes"]:
-                    pull_requests.append(
-                        {
-                            "repo": repo_name,
-                            "repo_url": repo_url,
-                            "pr_title": pr["title"],
-                            "pr_url": pr["url"],
-                            "pr_status": pr["state"],
-                            "created_at": pr["createdAt"].split("T")[0],
-                            "updated_at": pr["updatedAt"].split("T")[0],
-                        }
-                    )
+            for pr in repo["pullRequests"]["nodes"]:
+                pull_requests.append({
+                    "repo": repo_name,
+                    "repo_url": repo_url,
+                    "pr_title": pr["title"],
+                    "pr_url": pr["url"],
+                    "pr_state": pr["state"],
+                    "updated_at": pr["updatedAt"].split("T")[0],
+                    "created_at": pr["createdAt"].split("T")[0],
+                    "closed_at": pr["closedAt"].split("T")[0] if pr["closedAt"] else None,
+                    "author": pr["author"]["login"] if pr["author"] else None
+                })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
 
-    pull_requests.sort(key=lambda pr: pr["updated_at"], reverse=True)
+    # Sort pull requests by updated_at in descending order
+    pull_requests.sort(key=lambda x: x["updated_at"], reverse=True)
+
     return pull_requests
 
 def fetch_releases(oauth_token):

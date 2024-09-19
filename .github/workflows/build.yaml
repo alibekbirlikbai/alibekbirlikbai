@@ -55,7 +55,6 @@ jobs:
           git commit -m "feat(readme-bot): auto-update content" || exit 0
           git push
 
-  # Job to merge 'dev' branch into 'test' after a push to 'dev'
   merge_dev_to_test:
     needs: build
     if: github.ref == 'refs/heads/dev'
@@ -77,8 +76,17 @@ jobs:
           git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
           git push origin test
 
-      - name: Trigger test branch deployment
-        if: github.ref == 'refs/heads/test'
+  deploy:
+    needs: merge_dev_to_test
+    if: github.ref == 'refs/heads/test'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Trigger deployment for test branch
         run: |
           echo "Triggering deployment for test branch"
         # Add any deployment-specific logic here, such as calling a deployment script

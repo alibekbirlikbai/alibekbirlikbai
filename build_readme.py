@@ -12,7 +12,6 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 TOKEN = os.environ.get("REPO_TOKEN", "")
 
-# List of repositories to exclude from tracking
 EXCLUDED_REPOS = [
     "jwt-basic",
     "django-backend",
@@ -20,7 +19,6 @@ EXCLUDED_REPOS = [
     "spring-backend",
 ]
 
-# Define GraphQL queries
 GRAPHQL_REPO_QUERY = """
 query {
   search(first: 100, type: REPOSITORY, query: "is:public owner:alibekbirlikbai sort:updated", after: AFTER) {
@@ -56,7 +54,7 @@ query {
             name
             target {
               ... on Commit {
-                history(first: 1) {  # Get the latest commit for this branch
+                history(first: 1) {  # Get latest commit for current branch
                   totalCount
                   nodes {
                     message
@@ -80,6 +78,9 @@ query {
 }
 """
 
+total_pull_requests = 0
+repo_with_pull_requests = set()
+repo_with_commits = set()
 
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
@@ -97,6 +98,7 @@ def make_query(after_cursor=None):
     )
 
 def fetch_pull_requests(oauth_token):
+    global total_pull_requests
     pull_requests = []
     has_next_page = True
     after_cursor = None
@@ -122,7 +124,8 @@ def fetch_pull_requests(oauth_token):
 
             # Fetch pull requests
             for pr in repo.get("pullRequests", {}).get("nodes", []):
-                login = pr.get("author", {}).get("login", "Unknown")
+                total_pull_requests += 1
+                repo_with_pull_requests.add(repo_name)
 
                 # Use mergedAt if the PR is merged, otherwise use updatedAt
                 last_updated = pr.get("mergedAt") if pr.get("merged") else pr.get("updatedAt")
@@ -139,7 +142,6 @@ def fetch_pull_requests(oauth_token):
                     "updated_at": last_updated.split("T")[0],
                     "created_at": pr.get("createdAt", "Unknown").split("T")[0],
                     "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
-                    "author": login,
                     "pr_commits_count": pr_commits_count,
                 })
 
@@ -169,6 +171,8 @@ def fetch_commits(oauth_token):
 
             if repo_name in EXCLUDED_REPOS:
                 continue
+
+            repo_with_commits.add(repo_name)
 
             all_commits = []
             # Iterate over all branches (refs)
@@ -262,14 +266,15 @@ if __name__ == "__main__":
     pull_requests_md = "\n\n".join(
         [
             "- [_{}_]({}) - ({} commits total)<br/>"
-            "pr: [{}]({}) - {} - {}".format(
+            "pr: [{}]({}) - {} {} - {}".format(
                 pr["repo_name"],
                 pr["repo_url"],
                 pr["pr_commits_count"],
                 pr["pr_title"],
                 pr["pr_url"],
                 status_signs.get(pr["pr_status"], "Unknown status"),
-                pr["updated_at"]
+                pr["pr_status"],
+                pr["updated_at"],
             )
             for pr in pull_requests[:10]
         ]
@@ -307,9 +312,11 @@ if __name__ == "__main__":
     readme_contents = replace_chunk(readme_contents, "recent_pull_requests", pull_requests_md)
     readme_contents = replace_chunk(readme_contents, "recent_releases", releases_md)
 
+    readme_contents = replace_chunk(readme_contents, "pull_requests_count", total_pull_requests)
+    readme_contents = replace_chunk(readme_contents, "project_with_pull_requests_count", len(repo_with_pull_requests))
+    readme_contents = replace_chunk(readme_contents, "project_count", len(repo_with_commits))
+
     readme.open("w").write(readme_contents)
-
-
 
     commits_md = "\n\n".join(
         [
@@ -340,10 +347,16 @@ if __name__ == "__main__":
     # Write out pull_requests.md
     pull_requests_md_full = "\n".join(
         [
-            "* **[{}]({})** - {}".format(
+            "- [_{}_]({}) - ({} commits total)<br/>"
+            "pr: [{}]({}) - {} {} - {}".format(
+                pr["repo_name"],
+                pr["repo_url"],
+                pr["pr_commits_count"],
                 pr["pr_title"],
-                pr["pr_title"],
-                pr["created_at"],
+                pr["pr_url"],
+                status_signs.get(pr["pr_status"], "Unknown status"),
+                pr["pr_status"],
+                pr["updated_at"],
             )
             for pr in pull_requests
         ]

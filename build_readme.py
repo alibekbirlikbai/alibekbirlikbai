@@ -55,7 +55,7 @@ query {
             }
           }
         }
-        pullRequests(first: 100, states: [OPEN, CLOSED], orderBy: {field: UPDATED_AT, direction: DESC}) {
+        pullRequests(first: 100, states: [OPEN, CLOSED, MERGED], orderBy: {field: UPDATED_AT, direction: DESC}) {
           nodes {
             title
             url
@@ -63,6 +63,8 @@ query {
             updatedAt
             createdAt
             closedAt
+            merged
+            mergedAt
             author {
               login
             }
@@ -171,13 +173,16 @@ def fetch_pull_requests(oauth_token):
             for pr in repo.get("pullRequests", {}).get("nodes", []):
                 login = pr.get("author", {}).get("login", "Unknown")
 
+                # Use mergedAt if the PR is merged, otherwise use updatedAt
+                last_updated = pr.get("mergedAt") if pr.get("merged") else pr.get("updatedAt")
+
                 pull_requests.append({
                     "repo_name": repo_name,
                     "repo_url": repo_url,
                     "pr_title": pr.get("title", "No title"),
                     "pr_url": pr.get("url", "No URL"),
-                    "pr_status": pr.get("state", "Unknown"),
-                    "updated_at": pr.get("updatedAt", "Unknown").split("T")[0],
+                    "pr_status": "MERGED" if pr.get("merged") else pr.get("state", "Unknown"),
+                    "updated_at": last_updated.split("T")[0],
                     "created_at": pr.get("createdAt", "Unknown").split("T")[0],
                     "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
                     "author": login,

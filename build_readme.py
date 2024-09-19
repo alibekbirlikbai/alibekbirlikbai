@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
     pull_requests_md = "\n\n".join(
         [
-            "- [_@{}_]({}) - ({} commits in pr)\n"
+            "- [_@{}_]({}) - ({} commits in pr)\n\n"
             "[{}]({}) - {} - {}".format(
                 pr["repo_name"],
                 pr["repo_url"],
@@ -271,7 +271,7 @@ if __name__ == "__main__":
 
     commits_md = "\n\n".join(
         [
-            "- [_{}_]({}) - ({} commits total)\n"
+            "- [_{}_]({}) - ({} commits total)<br/>"
             "[{}]({}) - {}".format(
                 commit["repo_name"],
                 commit["repo_url"],

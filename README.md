@@ -7,29 +7,17 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (1 commits total)
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (1 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - :x: - 2024-09-19
 
-pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - :x: - 2024-09-19
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (7 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - :x: - 2024-09-19
 
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (7 commits total)
+- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (1 commits total)<br/>pr: [feat(gradle-migration): migrate to gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: - 2024-09-03
 
-pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - :x: - 2024-09-19
+- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/1) - :x: - 2024-09-19
 
-- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (1 commits total)
+- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - :x: - 2024-09-19
 
-pr: [feat(gradle-migration): migrate to gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: - 2024-09-03
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)
-
-pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/1) - :x: - 2024-09-19
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)
-
-pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - :x: - 2024-09-19
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)
-
-pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: - 2024-09-19
+- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: - 2024-09-19
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -40,7 +28,7 @@ pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: 
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (142 commits total)<br/>commit: [docs: add status_signs for pull-request](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/6a32cb445dda60399a3869e1977082daee9c57b8) - 2024-09-19
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (144 commits total)<br/>commit: [docs: add status_signs for pull-request](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/f19d1ecdc50781be9bb42d3fa5edcd08517a5390) - 2024-09-19
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (1 commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

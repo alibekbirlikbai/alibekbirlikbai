@@ -33,9 +33,9 @@ query {
       ... on Repository {
         name
         url
-        refs(first: 100, refPrefix: "refs/heads/") {  # Fetch all branches
+        refs(first: 100, refPrefix: "refs/heads/") {
           nodes {
-            name  # Branch name
+            name
             target {
               ... on Commit {
                 history(first: 1) {  # Get the latest commit for this branch
@@ -48,7 +48,7 @@ query {
                         login
                       }
                     }
-                    oid  # Use oid for commit SHA
+                    oid
                   }
                 }
               }
@@ -64,9 +64,7 @@ query {
             createdAt
             closedAt
             author {
-              user {
-                login
-              }
+              login  # Use 'login' instead of 'user'
             }
           }
         }
@@ -75,6 +73,7 @@ query {
   }
 }
 """
+
 
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
@@ -144,51 +143,45 @@ def fetch_commits(oauth_token):
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
 
-def fetch_pull_requests(oauth_token):
-    pull_requests = []
+def fetch_releases(oauth_token):
+    releases = []
     has_next_page = True
     after_cursor = None
 
     while has_next_page:
         data = client.execute(
-            query=make_query(after_cursor),  # Reuse the same make_query function
+            query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-
         if "data" not in data:
             print("Error fetching data: ", data)
-            break
+            break  # Exit if there is no 'data' in the response
 
-        repos = data["data"]["search"]["nodes"]
+        repos = data.get("data", {}).get("search", {}).get("nodes", [])
         for repo in repos:
             repo_name = repo["name"]
-            repo_url = repo["url"]
 
-            # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            # Fetch pull requests
-            for pr in repo.get("pullRequests", {}).get("nodes", []):
-                author = pr.get("author", {}).get("user")
-                login = author.get("login") if author else "Unknown"
-
-                pull_requests.append({
-                    "repo_name": repo_name,
-                    "repo_url": repo_url,
-                    "pr_title": pr.get("title", "No title"),
-                    "pr_url": pr.get("url", "No URL"),
-                    "pr_status": pr.get("state", "Unknown"),
-                    "updated_at": pr.get("updatedAt", "Unknown").split("T")[0],
-                    "created_at": pr.get("createdAt", "Unknown").split("T")[0],
-                    "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
-                    "author": login,
-                })
+            if "releases" in repo and repo["releases"]["totalCount"] > 0:
+                releases.append(
+                    {
+                        "repo_name": repo["name"],
+                        "repo_url": repo["url"],
+                        "release": repo["releases"]["nodes"][0]["name"]
+                        .replace(repo["name"], "")
+                        .strip(),
+                        "published_at": repo["releases"]["nodes"][0]["publishedAt"],
+                        "published_day": repo["releases"]["nodes"][0]["publishedAt"].split("T")[0],
+                        "url": repo["releases"]["nodes"][0]["url"],
+                    }
+                )
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
 
-    return pull_requests
+    return releases
 
 def fetch_releases(oauth_token):
     releases = []

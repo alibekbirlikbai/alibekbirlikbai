@@ -5,7 +5,7 @@
 <table><tr>
 <td valign="top" width="50%">
 
-### Последние pull-request
+### _Pull-Request_
 Список из <!-- pull_requests_count starts -->`6`<!-- pull_requests_count ends --> _pull-request_ по <!-- project_with_pull_requests_count starts -->`3`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
@@ -28,14 +28,11 @@
 
 <td valign="top" width="50%">
 
-### Последние commits
+### _Commits_
 Актуальные _коммиты_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (153 commits total)<br/>commit: [Merge remote-tracking branch 'origin/dev' into dev
-
-# Conflicts:
-#	README.md](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/ae63c7a5fdd2da93f5581f68dfe672ea95331e34) - 2024-09-19
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (153 commits total)<br/>commit: [Merge remote-tracking branch 'origin/dev' into dev](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/ae63c7a5fdd2da93f5581f68dfe672ea95331e34) - 2024-09-19
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (1 commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

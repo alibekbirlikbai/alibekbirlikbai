@@ -64,7 +64,9 @@ query {
             createdAt
             closedAt
             author {
-              login
+              user {
+                login
+              }
             }
           }
         }
@@ -148,11 +150,9 @@ def fetch_pull_requests(oauth_token):
     after_cursor = None
 
     while has_next_page:
-        variables = {"cursor": after_cursor}
         data = client.execute(
-            query=GRAPHQL_REPO_QUERY,
-            variables=variables,
-            headers={"Authorization": f"Bearer {oauth_token}"},
+            query=make_query(after_cursor),  # Reuse the same make_query function
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
 
         if "data" not in data:
@@ -168,24 +168,25 @@ def fetch_pull_requests(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            for pr in repo["pullRequests"]["nodes"]:
+            # Fetch pull requests
+            for pr in repo.get("pullRequests", {}).get("nodes", []):
+                author = pr.get("author", {}).get("user")
+                login = author.get("login") if author else "Unknown"
+
                 pull_requests.append({
-                    "repo": repo_name,
+                    "repo_name": repo_name,
                     "repo_url": repo_url,
-                    "pr_title": pr["title"],
-                    "pr_url": pr["url"],
-                    "pr_state": pr["state"],
-                    "updated_at": pr["updatedAt"].split("T")[0],
-                    "created_at": pr["createdAt"].split("T")[0],
-                    "closed_at": pr["closedAt"].split("T")[0] if pr["closedAt"] else None,
-                    "author": pr["author"]["login"] if pr["author"] else None
+                    "pr_title": pr.get("title", "No title"),
+                    "pr_url": pr.get("url", "No URL"),
+                    "pr_status": pr.get("state", "Unknown"),
+                    "updated_at": pr.get("updatedAt", "Unknown").split("T")[0],
+                    "created_at": pr.get("createdAt", "Unknown").split("T")[0],
+                    "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
+                    "author": login,
                 })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-
-    # Sort pull requests by updated_at in descending order
-    pull_requests.sort(key=lambda x: x["updated_at"], reverse=True)
 
     return pull_requests
 

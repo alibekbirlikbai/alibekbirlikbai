@@ -252,7 +252,7 @@ if __name__ == "__main__":
     pull_requests_md = "\n\n".join(
         [
             "- [{}]({}) - [{}]({}) - {} - {}".format(
-                pr["repo"],
+                pr["repo_name"],
                 pr["repo_url"],
                 pr["pr_title"],
                 pr["pr_url"],

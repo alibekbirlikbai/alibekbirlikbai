@@ -64,7 +64,7 @@ query {
             createdAt
             closedAt
             author {
-              login  # Use 'login' instead of 'user'
+              login
             }
           }
         }
@@ -143,8 +143,8 @@ def fetch_commits(oauth_token):
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     return commits
 
-def fetch_releases(oauth_token):
-    releases = []
+def fetch_pull_requests(oauth_token):
+    pull_requests = []
     has_next_page = True
     after_cursor = None
 
@@ -153,35 +153,40 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
+
         if "data" not in data:
             print("Error fetching data: ", data)
-            break  # Exit if there is no 'data' in the response
+            break
 
-        repos = data.get("data", {}).get("search", {}).get("nodes", [])
+        repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
+            repo_url = repo["url"]
 
+            # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            if "releases" in repo and repo["releases"]["totalCount"] > 0:
-                releases.append(
-                    {
-                        "repo_name": repo["name"],
-                        "repo_url": repo["url"],
-                        "release": repo["releases"]["nodes"][0]["name"]
-                        .replace(repo["name"], "")
-                        .strip(),
-                        "published_at": repo["releases"]["nodes"][0]["publishedAt"],
-                        "published_day": repo["releases"]["nodes"][0]["publishedAt"].split("T")[0],
-                        "url": repo["releases"]["nodes"][0]["url"],
-                    }
-                )
+            # Fetch pull requests
+            for pr in repo.get("pullRequests", {}).get("nodes", []):
+                login = pr.get("author", {}).get("login", "Unknown")
+
+                pull_requests.append({
+                    "repo_name": repo_name,
+                    "repo_url": repo_url,
+                    "pr_title": pr.get("title", "No title"),
+                    "pr_url": pr.get("url", "No URL"),
+                    "pr_status": pr.get("state", "Unknown"),
+                    "updated_at": pr.get("updatedAt", "Unknown").split("T")[0],
+                    "created_at": pr.get("createdAt", "Unknown").split("T")[0],
+                    "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
+                    "author": login,
+                })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
 
-    return releases
+    return pull_requests
 
 def fetch_releases(oauth_token):
     releases = []

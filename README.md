@@ -7,7 +7,7 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
-
+some old text
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 

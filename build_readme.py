@@ -47,7 +47,8 @@ query {
               login
             }
             commits {
-                totalCount
+              totalCount
+            }
           }
         }
         refs(first: 100, refPrefix: "refs/heads/") {

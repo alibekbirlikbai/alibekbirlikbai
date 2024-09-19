@@ -7,7 +7,7 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
-some old text
+
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -18,7 +18,7 @@ some old text
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/6feb22d0b89dd5d7c885b06a7c9b7fac0b90245b) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a93ae5cd6787c851aff6f2f4e356d44a413bf17c) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

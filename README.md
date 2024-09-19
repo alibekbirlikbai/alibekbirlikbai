@@ -7,7 +7,7 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
-
+empty space
 <!-- recent_pull_requests ends -->
 Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -18,7 +18,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-
+empty space
 <!-- recent_commits ends -->
 Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

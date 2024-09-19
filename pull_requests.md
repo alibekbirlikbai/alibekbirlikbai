@@ -1,1 +1,1 @@
-* **[_2.1_front](https://github.com/alibekbirlikbai/ticket-booking-service/pull/7)** - 2022-07-27
+* **[_2.1_front](https://github.com/alibekbirlikbai/spring-backend/pull/7)** - 2022-07-27

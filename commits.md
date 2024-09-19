@@ -1,7 +1,7 @@
-* **[Update README.md](https://github.com/alibekbirlikbai/full-stack/commit/e445d14007046c080c2a475ce0d599d8b27203d7)** - 2024-09-17: e445d14007046c080c2a475ce0d599d8b27203d7
+* **[Update README.md](https://github.com/alibekbirlikbai/jwt-basic/commit/e445d14007046c080c2a475ce0d599d8b27203d7)** - 2024-09-17: e445d14007046c080c2a475ce0d599d8b27203d7
 * **[Update README.md](https://github.com/alibekbirlikbai/django-backend/commit/654b609588051e642d79393b2854a0411ef9e719)** - 2024-09-17: 654b609588051e642d79393b2854a0411ef9e719
 * **[Update README.md](https://github.com/alibekbirlikbai/news-api/commit/010c7d13a787461452fccdfbd1e9fdfd082a3180)** - 2024-04-10: 010c7d13a787461452fccdfbd1e9fdfd082a3180
-* **[Update README.md](https://github.com/alibekbirlikbai/ticket-booking-service/commit/698aecd9933bd6aea3de82af3f0dbf2cb4e15f49)** - 2024-09-17: 698aecd9933bd6aea3de82af3f0dbf2cb4e15f49
+* **[Update README.md](https://github.com/alibekbirlikbai/spring-backend/commit/698aecd9933bd6aea3de82af3f0dbf2cb4e15f49)** - 2024-09-17: 698aecd9933bd6aea3de82af3f0dbf2cb4e15f49
 * **[feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81)** - 2024-09-17: d6bddf0ce625bbc2882a7c122630615912c7fb81
 * **[docs: minor change](https://github.com/alibekbirlikbai/microservice-expenses/commit/3301689094427a513501fd1828f66ef4bc3dd838)** - 2024-04-30: 3301689094427a513501fd1828f66ef4bc3dd838
 * **[config: add config-server (initial)](https://github.com/alibekbirlikbai/jwt-backend/commit/e208832daf3fbeb65d648204bf8eddd28fae1d48)** - 2024-04-28: e208832daf3fbeb65d648204bf8eddd28fae1d48

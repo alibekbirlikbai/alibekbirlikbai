@@ -18,7 +18,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/16d11d3f17d44e8b8a894c0623d12f38a0fec751) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/335729b94f6b489808a83a051e3a0cea8dabe692) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

@@ -7,6 +7,8 @@
 
 ### Последние pull-requests
 <!-- recent_pull_requests starts -->
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(readme-bot): auto-update content](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - OPEN - 2024-09-19
+
 - [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(readme-bot): auto-update content](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - CLOSED - 2024-09-19
 
 - [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Release](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - CLOSED - 2024-03-01
@@ -24,7 +26,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/3c92457e501d46724c82c5cb5cc5a3697a8061f4) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/327f19794130ddd57baf5449a974832a6674f3f1) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

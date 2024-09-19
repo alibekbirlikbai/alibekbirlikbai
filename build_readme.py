@@ -290,8 +290,8 @@ if __name__ == "__main__":
     pull_requests_md_full = "\n".join(
         [
             "* **[{}]({})** - {}".format(
-                pr["title"],
-                pr["url"],
+                pr["pr_title"],
+                pr["pr_title"],
                 pr["created_at"],
             )
             for pr in pull_requests

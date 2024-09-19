@@ -11,6 +11,8 @@
 
 - [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(readme-bot): auto-update content](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - CLOSED - 2024-09-19
 
+- [microservice-expenses](https://github.com/alibekbirlikbai/microservice-expenses) - [feat(gradle-migration): migrate to gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - MERGED - 2024-09-03
+
 - [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Release](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - CLOSED - 2024-03-01
 
 - [pastebin-backend](https://github.com/alibekbirlikbai/pastebin-backend) - [Develop](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - CLOSED - 2024-03-01
@@ -26,7 +28,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/327f19794130ddd57baf5449a974832a6674f3f1) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): test deployment](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/dc8dc98a4b825355f145ad078874b94063fb42da) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

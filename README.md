@@ -18,7 +18,7 @@
 
 ### Последние commits
 <!-- recent_commits starts -->
-- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): fix auto-deployment in 'dev' branch](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/6121224183cb6254a0f0893c837a0ad877715136) - 2024-09-19
+- [alibekbirlikbai](https://github.com/alibekbirlikbai/alibekbirlikbai) - [feat(dev): fix auto-deployment in 'dev' branch](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/1d520629f3fe38011bc65c42a37a3a41488120c9) - 2024-09-19
 
 - [university-bachelor](https://github.com/alibekbirlikbai/university-bachelor) - [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - 2024-09-17
 

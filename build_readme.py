@@ -156,8 +156,7 @@ def fetch_pull_requests(oauth_token):
             if repo_name in EXCLUDED_REPOS:
                 continue
 
-            # Check if pull requests exist in the repo
-            if "pullRequests" in repo:
+            if "pullRequests" in repo and "nodes" in repo["pullRequests"]:
                 for pr in repo["pullRequests"]["nodes"]:
                     pull_requests.append(
                         {
@@ -174,9 +173,7 @@ def fetch_pull_requests(oauth_token):
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
 
-    # Sort by updated_at in descending order
     pull_requests.sort(key=lambda pr: pr["updated_at"], reverse=True)
-
     return pull_requests
 
 def fetch_releases(oauth_token):
@@ -242,10 +239,11 @@ if __name__ == "__main__":
 
     pull_requests_md = "\n\n".join(
         [
-            "- [{}]({}) - [{}] - {} - {}".format(
+            "- [{}]({}) - [{}]({}) - {} - {}".format(
                 pr["repo"],
                 pr["repo_url"],
                 pr["pr_title"],
+                pr["pr_url"],
                 pr["pr_status"],
                 pr["updated_at"]
             )

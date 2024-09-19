@@ -55,7 +55,7 @@ query {
             }
           }
         }
-        pullRequests(first: 100, states: [open, closed]) {  # Fetch both open and closed pull requests
+        pullRequests(first: 100, states: [OPEN, CLOSED]) {  # Fetch both open and closed pull requests
           nodes {
             title
             url

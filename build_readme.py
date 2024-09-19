@@ -315,19 +315,19 @@ if __name__ == "__main__":
     readme_contents = replace_chunk(
         readme_contents,
         "pull_requests_count",
-        str(total_pull_requests),
+        "`" + str(total_pull_requests) + "`",
         inline=True,
     )
     readme_contents = replace_chunk(
         readme_contents,
         "project_with_pull_requests_count",
-        str(len(repo_with_pull_requests)),
+        "`" + str(len(repo_with_pull_requests)) + "`",
         inline=True,
     )
     readme_contents = replace_chunk(
         readme_contents,
         "project_count",
-        str(len(repo_with_commits)),
+        "`" + str(len(repo_with_commits)) + "`",
         inline=True,
     )
 

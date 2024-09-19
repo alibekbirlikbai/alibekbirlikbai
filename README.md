@@ -8,9 +8,9 @@
 ### Последние pull-request
 Список из <!-- pull_requests_count starts -->
 6
-<!-- pull_requests_count ends --> pull-request по <!-- project_with_pull_requests_count starts -->
+<!-- pull_requests_count ends --> _pull-request_ по <!-- project_with_pull_requests_count starts -->
 3
-<!-- project_with_pull_requests_count ends --> моим проектам, упорядоченных по дате последнего обновления.
+<!-- project_with_pull_requests_count ends --> проектам, упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (1 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - :x: closed - 2024-09-19
@@ -33,7 +33,7 @@
 <td valign="top" width="50%">
 
 ### Последние commits
-Актуальные коммиты по <!-- project_count starts -->
+Актуальные _коммиты_ по <!-- project_count starts -->
 8
 <!-- project_count ends --> проектам.
 

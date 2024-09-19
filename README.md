@@ -6,9 +6,7 @@
 <td valign="top" width="50%">
 
 ### Последние pull-request
-Список из <!-- pull_requests_count starts -->0<!-- pull_requests_count ends --> pull-request по <!-- 
-project_with_pull_requests_count starts 
--->0<!-- project_with_pull_requests_count ends --> моим проектам, упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->0<!-- pull_requests_count ends --> pull-request по <!-- project_with_pull_requests_count starts -->0<!-- project_with_pull_requests_count ends --> моим проектам, упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 ...

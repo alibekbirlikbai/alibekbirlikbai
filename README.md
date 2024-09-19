@@ -29,7 +29,7 @@
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _коммиты_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
+Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (155 commits total)<br/>commit: [docs(dev): change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/cf0ce087593f52cb7b54636263a79b8cb0ff11a6) - _2024-09-19_

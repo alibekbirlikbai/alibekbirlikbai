@@ -4,6 +4,8 @@ import json
 import pathlib
 import re
 import os
+import requests
+from datetime import datetime
 
 root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
@@ -58,6 +60,7 @@ query {
             title
             url
             createdAt
+            updatedAt  
           }
         }
       }
@@ -147,6 +150,7 @@ def fetch_pull_requests(oauth_token):
         repos = data["data"]["search"]["nodes"]
         for repo in repos:
             repo_name = repo["name"]
+            repo_url = repo["url"]
 
             if repo_name in EXCLUDED_REPOS:
                 continue
@@ -157,13 +161,20 @@ def fetch_pull_requests(oauth_token):
                     pull_requests.append(
                         {
                             "repo": repo_name,
+                            "repo_url": repo_url,
                             "title": pr["title"],
-                            "url": pr["url"],
+                            "pr_url": pr["url"],
                             "created_at": pr["createdAt"].split("T")[0],
+                            "updated_at": pr["updatedAt"].split("T")[0],
                         }
                     )
+
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+
+    # Sort by updated_at in descending order
+    pull_requests.sort(key=lambda pr: pr["updated_at"], reverse=True)
+
     return pull_requests
 
 def fetch_releases(oauth_token):
@@ -188,7 +199,7 @@ def fetch_releases(oauth_token):
             if "releases" in repo and repo["releases"]["totalCount"] > 0:
                 releases.append(
                     {
-                        "repo": repo["name"],
+                        "repo_name": repo["name"],
                         "repo_url": repo["url"],
                         "release": repo["releases"]["nodes"][0]["name"]
                         .replace(repo["name"], "")
@@ -229,11 +240,12 @@ if __name__ == "__main__":
 
     pull_requests_md = "\n\n".join(
         [
-            "- [{} - {}]({}) - {}".format(
-                pr["repo"],
+            "- [{}]({}) - [{}]({}) - {}".format(
+                pr["repo_name"],
+                pr["repo_url"],
                 pr["title"],
-                pr["url"],
-                pr["created_at"]
+                pr["pr_url"],
+                pr["updated_at"]
             )
             for pr in pull_requests[:10]
         ]

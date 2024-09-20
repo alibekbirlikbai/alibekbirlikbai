@@ -12,8 +12,8 @@ on:
 
 jobs:
   merge_dev_to_test:
-    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -32,8 +32,9 @@ jobs:
           git push origin test
 
   build:
-    runs-on: ubuntu-latest
+    needs: merge_dev_to_test
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repo
         uses: actions/checkout@v2

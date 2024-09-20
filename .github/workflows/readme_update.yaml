@@ -1,38 +1,16 @@
-name: Build README and Merge 'Dev' to 'Test'
+name: Update README
 
 on:
   push:
     branches:
-      - main
       - test
-      - dev
+      - main
   workflow_dispatch:
   schedule:
     - cron: '8,28,48 * * * *'
 
 jobs:
-  merge_dev_to_test:
-    if: github.ref == 'refs/heads/dev'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Set up Git for merging
-        run: |
-          git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "push-bot"
-
-      - name: Merge 'dev' into 'test'
-        run: |
-          git checkout test
-          git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
-          git push origin test
-
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo

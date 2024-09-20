@@ -4,12 +4,14 @@
 
 </div>
 
+> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 <table><tr>
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`2`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`2`<!-- pull_requests_count ends --> _pull-request_, упорядоченных по 
+дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
@@ -49,8 +51,7 @@
 
 </tr></table>
 
-> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 > [!NOTE]
-> - Здесь используется [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>
+> - [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>
 > - Обновления выполняются с помощью скрипта на _Python_, который получает информацию о _pull-request_ и _commits_ используя [GitHub GraphQL API](https://docs.github.com/en/graphql)<br>

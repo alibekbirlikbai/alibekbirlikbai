@@ -31,7 +31,7 @@ query {
       ... on Repository {
         name
         url
-        pullRequests(first: 100, states: [OPEN, CLOSED, MERGED], orderBy: {field: UPDATED_AT, direction: DESC}) {
+        pullRequests(first: 100, states: [OPEN, MERGED], orderBy: {field: UPDATED_AT, direction: DESC}) {
           nodes {
             title
             url

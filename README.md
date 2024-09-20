@@ -1,6 +1,8 @@
-[![linkedin](https://img.shields.io/badge/-Alibek_Birlikbai-161616?style=flat-square&labelColor=161616&logo=LinkedIn&logoColor=white&color=161616)](https://www.linkedin.com/in/alibek-birlikbai/)  
-[![telegram](https://img.shields.io/badge/-@alibekbirlikbai-161616?style=flat-square&labelColor=161616&logo=Telegram&logoColor=white&color=161616)](https://t.me/alibekbirlikbai)
-
+> [!NOTE]
+> - Данный проект использует _**[GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows)**_ 
+> для авто-обновления _Readme.md_ <br/> 
+> - Обновление происходит через скрипт на _Python_, который получает _pull-request_ и _commits_ используя _**[GitHub GraphQL API](https://docs.github.com/en/graphql)**_<br>
+> Проект вдохновлен на основе [@simonw](https://github.com/simonw/simonw) и статьи ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 <table><tr>
 <td valign="top" width="50%">
@@ -43,3 +45,10 @@
 </td>
 
 </tr></table>
+
+
+<div align="center">
+
+[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) - [Website](https://alibekbirlikbai.github.io/) - [Telegram](https://t.me/alibekbirlikbai)
+
+</div>

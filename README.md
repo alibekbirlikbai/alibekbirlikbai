@@ -49,6 +49,6 @@
 
 <div align="center">
 
-[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) - [Website](https://alibekbirlikbai.github.io/) - [Telegram](https://t.me/alibekbirlikbai)
+[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) &nbsp; [Website](https://alibekbirlikbai.github.io/) &nbsp; [Telegram](https://t.me/alibekbirlikbai)
 
 </div>

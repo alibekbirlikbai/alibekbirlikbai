@@ -1,6 +1,1 @@
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (1 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - :x: closed - 2024-09-19
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (7 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - :x: closed - 2024-09-19
-- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (1 commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: merged - 2024-09-03
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/1) - :x: closed - 2024-09-19
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - :x: closed - 2024-09-19
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (2 commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: closed - 2024-09-19
+- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_

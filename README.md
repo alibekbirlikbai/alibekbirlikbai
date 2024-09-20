@@ -1,25 +1,17 @@
-[![linkedin](https://img.shields.io/badge/-Alibek_Birlikbai-161616?style=flat-square&labelColor=161616&logo=LinkedIn&logoColor=white&color=161616)](https://www.linkedin.com/in/alibek-birlikbai/)  
-[![telegram](https://img.shields.io/badge/-@alibekbirlikbai-161616?style=flat-square&labelColor=161616&logo=Telegram&logoColor=white&color=161616)](https://t.me/alibekbirlikbai)
-
+> [!NOTE]
+> - Данный проект использует _**[GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows)**_ 
+> для авто-обновления _Readme.md_ <br/> 
+> - Обновление происходит через скрипт на _Python_, который получает _pull-request_ и _commits_ используя _**[GitHub GraphQL API](https://docs.github.com/en/graphql)**_<br>
+> Проект вдохновлен на основе [@simonw](https://github.com/simonw/simonw) и статьи ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 <table><tr>
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`6`<!-- pull_requests_count ends --> _pull-request_ по <!-- project_with_pull_requests_count starts -->`3`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ по <!-- project_with_pull_requests_count starts -->`1`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_1_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/1) - :x: _closed_ - _2024-09-19_
-
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_7_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/2) - :x: _closed_ - _2024-09-19_
-
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (_2_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/1) - :x: _closed_ - _2024-09-19_
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (_2_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/2) - :x: _closed_ - _2024-09-19_
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (_2_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: _closed_ - _2024-09-19_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -32,7 +24,7 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_157_ commits total)<br/>commit: [docs(dev): change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/92a606d27f33d1ff59f1471fc3a092473683e0e7) - _2024-09-19_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_160_ commits total)<br/>commit: [docs(dev): change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/2ec9d05b2261f80137fc3514f67639d004ae530d) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 
@@ -53,3 +45,10 @@
 </td>
 
 </tr></table>
+
+
+<div align="center">
+
+[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) - [Website](https://alibekbirlikbai.github.io/) - [Telegram](https://t.me/alibekbirlikbai)
+
+</div>

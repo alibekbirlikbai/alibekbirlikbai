@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo

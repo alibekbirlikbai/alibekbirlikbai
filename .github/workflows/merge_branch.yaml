@@ -27,3 +27,12 @@ jobs:
           git checkout test
           git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
           git push origin test
+
+      - name: Trigger Update README workflow
+        if: success()  # Only trigger if the merge was successful
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/update_readme.yml/dispatches \
+            -d '{"ref": "test"}'

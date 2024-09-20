@@ -8,8 +8,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ упорядоченных 
-по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_

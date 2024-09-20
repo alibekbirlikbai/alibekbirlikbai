@@ -26,7 +26,7 @@ project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_co
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_171_ commits total)<br/>commit: [fix(dev): fix workflow to change trigger branch for 'build' job](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a7231a11db9ff4554773d16972cf31137a0df690) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_173_ commits total)<br/>commit: [fix(dev): fix workflow to change trigger branch for 'build' job](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/008d62e0b8a79091d57f55c99fdfed2d867b0739) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

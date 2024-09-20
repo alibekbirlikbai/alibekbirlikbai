@@ -118,32 +118,39 @@ def fetch_pull_requests(oauth_token):
             repo_name = repo["name"]
             repo_url = repo["url"]
 
-            # Skip excluded repositories
             if repo_name in EXCLUDED_REPOS:
                 continue
 
+            repo_has_valid_pr = False  # Flag to check if repo has any non-closed PRs
+
             # Fetch pull requests
             for pr in repo.get("pullRequests", {}).get("nodes", []):
-                total_pull_requests += 1
+                pr_status = "merged" if pr.get("merged") else pr.get("state", "Unknown").lower()
+
+                if pr_status != "closed":
+                    total_pull_requests += 1
+                    repo_has_valid_pr = True
+
+                    # Use mergedAt if the PR is merged, otherwise use updatedAt
+                    last_updated = pr.get("mergedAt") if pr.get("merged") else pr.get("updatedAt")
+
+                    # Get the total count of commits
+                    pr_commits_count = pr.get("commits", {}).get("totalCount", 0)
+
+                    pull_requests.append({
+                        "repo_name": repo_name,
+                        "repo_url": repo_url,
+                        "pr_title": pr.get("title", "No title"),
+                        "pr_url": pr.get("url", "No URL"),
+                        "pr_status": pr_status,
+                        "updated_at": last_updated.split("T")[0],
+                        "created_at": pr.get("createdAt", "Unknown").split("T")[0],
+                        "pr_commits_count": pr_commits_count,
+                    })
+
+            # Add repo to set only if it has any non-closed PRs
+            if repo_has_valid_pr:
                 repo_with_pull_requests.add(repo_name)
-
-                # Use mergedAt if the PR is merged, otherwise use updatedAt
-                last_updated = pr.get("mergedAt") if pr.get("merged") else pr.get("updatedAt")
-
-                # Get the total count of commits
-                pr_commits_count = pr.get("commits", {}).get("totalCount", 0)
-
-                pull_requests.append({
-                    "repo_name": repo_name,
-                    "repo_url": repo_url,
-                    "pr_title": pr.get("title", "No title"),
-                    "pr_url": pr.get("url", "No URL"),
-                    "pr_status": "merged" if pr.get("merged") else pr.get("state", "Unknown").lower(),
-                    "updated_at": last_updated.split("T")[0],
-                    "created_at": pr.get("createdAt", "Unknown").split("T")[0],
-                    # "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
-                    "pr_commits_count": pr_commits_count,
-                })
 
         has_next_page = data["data"]["search"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]

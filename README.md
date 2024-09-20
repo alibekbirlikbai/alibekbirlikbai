@@ -8,7 +8,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
+Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
 project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных 
 по дате последнего обновления.
 
@@ -23,7 +23,7 @@ project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_co
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
+Актуальные _commits_ по <!-- project_count starts -->`0`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_178_ commits total)<br/>commit: [feat(dev): exclude closed status from pull_request](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/b4ba6fd25c8313afc20b2522485bbc7788848e9e) - _2024-09-20_

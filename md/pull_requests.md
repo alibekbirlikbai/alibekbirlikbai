@@ -1,0 +1,1 @@
+- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_

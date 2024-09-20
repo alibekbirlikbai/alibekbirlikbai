@@ -4,8 +4,6 @@
 
 </div>
 
-> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
-
 <table><tr>
 <td valign="top" width="50%">
 
@@ -45,6 +43,7 @@
 
 </tr></table>
 
+> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 > [!NOTE]
 > - [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>

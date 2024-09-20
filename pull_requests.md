@@ -1,1 +1,0 @@
-* **[_2.1_front](https://github.com/alibekbirlikbai/spring-backend/pull/7)** - 2022-07-27

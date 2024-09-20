@@ -1,8 +1,8 @@
+> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
+
 > [!NOTE]
-> - Данный проект использует _**[GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows)**_ 
-> для авто-обновления _Readme.md_ <br/> 
-> - Обновление происходит через скрипт на _Python_, который получает _pull-request_ и _commits_ используя _**[GitHub GraphQL API](https://docs.github.com/en/graphql)**_<br>
-> Проект вдохновлен на основе [@simonw](https://github.com/simonw/simonw) и статьи ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
+> - Здесь используется [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>
+> - Обновления выполняются с помощью скрипта на _Python_, который получает информацию о _pull-request_ и _commits_ используя [GitHub GraphQL API](https://docs.github.com/en/graphql)<br>
 
 <table><tr>
 <td valign="top" width="50%">
@@ -24,7 +24,7 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_160_ commits total)<br/>commit: [docs(dev): change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/2ec9d05b2261f80137fc3514f67639d004ae530d) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_162_ commits total)<br/>commit: [docs(dev): add project description](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/156ed9f062ec0faa574ff6fbcfc34a1892bc5cf4) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

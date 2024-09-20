@@ -3,6 +3,7 @@ name: Update README
 on:
   push:
     branches:
+      - dev
       - test
       - main
   workflow_dispatch:

@@ -1,10 +1,8 @@
-name: Build README and Merge 'Dev' to 'Test'
+name: Merge 'Dev' to 'Test'
 
 on:
   push:
     branches:
-      - main
-      - test
       - dev
   workflow_dispatch:
   schedule:
@@ -12,7 +10,6 @@ on:
 
 jobs:
   merge_dev_to_test:
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -31,8 +28,20 @@ jobs:
           git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
           git push origin test
 
+
+name: Update README
+
+on:
+  push:
+    branches:
+      - test
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '8,28,48 * * * *'
+
+jobs:
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo

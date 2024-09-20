@@ -38,7 +38,7 @@ query {
             state
             updatedAt
             createdAt
-            closedAt
+            # closedAt
             merged
             mergedAt
             author {
@@ -141,7 +141,7 @@ def fetch_pull_requests(oauth_token):
                     "pr_status": "merged" if pr.get("merged") else pr.get("state", "Unknown").lower(),
                     "updated_at": last_updated.split("T")[0],
                     "created_at": pr.get("createdAt", "Unknown").split("T")[0],
-                    "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
+                    # "closed_at": pr.get("closedAt", "Unknown").split("T")[0] if pr.get("closedAt") else None,
                     "pr_commits_count": pr_commits_count,
                 })
 
@@ -259,7 +259,7 @@ if __name__ == "__main__":
 
     status_signs = {
         "open": ":white_check_mark:",
-        "closed": ":x:",
+        # "closed": ":x:",
         "merged": ":ballot_box_with_check:"
     }
 

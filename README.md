@@ -8,7 +8,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
+Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
 project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных 
 по дате последнего обновления.
 
@@ -23,10 +23,10 @@ project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_co
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _commits_ по <!-- project_count starts -->`0`<!-- project_count ends --> проектам.
+Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_178_ commits total)<br/>commit: [feat(dev): exclude closed status from pull_request](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/b4ba6fd25c8313afc20b2522485bbc7788848e9e) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_179_ commits total)<br/>commit: [fix(dev): fix marker project_with_pull_requests_count](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/ddbeccdbb14a2dc2054fa7c6d0f49fafb52ba32b) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

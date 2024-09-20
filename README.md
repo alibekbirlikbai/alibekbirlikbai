@@ -3,7 +3,7 @@
 > [!NOTE]
 > - Здесь используется [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>
 > - Обновления выполняются с помощью скрипта на _Python_, который получает информацию о _pull-request_ и _commits_ используя [GitHub GraphQL API](https://docs.github.com/en/graphql)<br>
-
+ 
 <table><tr>
 <td valign="top" width="50%">
 

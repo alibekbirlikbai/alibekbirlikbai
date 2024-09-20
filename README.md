@@ -1,8 +1,8 @@
+> Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
+
 > [!NOTE]
-> - Данный проект использует _**[GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows)**_ 
-> для авто-обновления _Readme.md_ <br/> 
-> - Обновление происходит через скрипт на _Python_, который получает _pull-request_ и _commits_ используя _**[GitHub GraphQL API](https://docs.github.com/en/graphql)**_<br>
-> Проект вдохновлен на основе [@simonw](https://github.com/simonw/simonw) и статьи ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
+> - Здесь используется [GitHub Actions workflows](https://docs.github.com/en/actions/writing-workflows) для авто-обновления _Readme.md_ <br/>
+> - Обновления выполняются с помощью скрипта на _Python_, который получает информацию о _pull-request_ и _commits_ используя [GitHub GraphQL API](https://docs.github.com/en/graphql)<br>
 
 <table><tr>
 <td valign="top" width="50%">

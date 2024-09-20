@@ -1,0 +1,38 @@
+name: Merge 'Dev' to 'Test'
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+  schedule:
+    - cron: '8,28,48 * * * *'
+
+jobs:
+  merge_dev_to_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git for merging
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "push-bot"
+
+      - name: Merge 'dev' into 'test'
+        run: |
+          git checkout test
+          git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
+          git push origin test
+
+      - name: Trigger Update README workflow
+        if: success()  # Only trigger if the merge was successful
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/alibekbirlikbai/alibekbirlikbai/actions/workflows/readme_update.yaml/dispatches \
+            -d '{"ref": "test"}'

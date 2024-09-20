@@ -8,8 +8,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ упорядоченных
-по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 <!-- recent_pull_requests ends -->

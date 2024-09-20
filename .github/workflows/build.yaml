@@ -32,7 +32,6 @@ jobs:
           git push origin test
 
   build:
-    needs: merge_dev_to_test
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
     steps:

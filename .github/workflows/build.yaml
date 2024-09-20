@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-      - dev
       - test
+      - dev
   workflow_dispatch:
   schedule:
     - cron: '8,28,48 * * * *'
@@ -13,6 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
@@ -56,9 +57,8 @@ jobs:
           git push
 
   merge_dev_to_test:
-    needs: build
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

@@ -8,10 +8,11 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ по <!-- project_with_pull_requests_count starts -->`1`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
+project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных 
+по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
-- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -21,24 +22,9 @@
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
+Актуальные _commits_ по <!-- project_count starts -->`0`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_164_ commits total)<br/>commit: [docs(dev): change project description](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/5644e7a9fcbe8346f88796aa10bb9905edd3209a) - _2024-09-20_
-
-- [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
-
-- [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/microservice-expenses/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
-
-- [_jwt-backend_](https://github.com/alibekbirlikbai/jwt-backend) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
-
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_51_ commits total)<br/>commit: [style: add minor style change](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/b2fe42d2c721fbe6485dcb80d5f31c64091a34ea) - _2024-05-06_
-
-- [_pastebin_](https://github.com/alibekbirlikbai/pastebin) - (_2_ commits total)<br/>commit: [Updates](https://github.com/alibekbirlikbai/pastebin/commit/cc8addde9c7b162a693fcde84b5ce5b717a96e54) - _2024-04-10_
-
-- [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (_57_ commits total)<br/>commit: [feat: resolve cors configuration problem](https://github.com/alibekbirlikbai/pastebin-backend/commit/d3d1f3f2af371254075460dbf1be751d046866ab) - _2024-04-05_
-
-- [_proxy-server_](https://github.com/alibekbirlikbai/proxy-server) - (_6_ commits total)<br/>commit: [docs: add link to deployed URL](https://github.com/alibekbirlikbai/proxy-server/commit/150c67582b00233b8e7eb7b18a55e0e4f0f7efdc) - _2024-03-16_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

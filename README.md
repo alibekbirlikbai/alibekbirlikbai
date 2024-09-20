@@ -8,9 +8,11 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`2`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from 'dev', and auto-updating 'test' and 'main' branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :white_check_mark: _open_ - _2024-09-20_
+
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
@@ -24,7 +26,7 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_179_ commits total)<br/>commit: [fix(dev): fix marker project_with_pull_requests_count](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/8dcc87ff99fcee88eb308dd2677ac102fc566e5c) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_191_ commits total)<br/>commit: [Merge branch 'main' into dev](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/ed7d70f2f920910b58f1b83d50dc6127451dc077) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

@@ -11,9 +11,29 @@ on:
     - cron: '8,28,48 * * * *'
 
 jobs:
-  build:
+  merge_dev_to_test:
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
-    # if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git for merging
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "push-bot"
+
+      - name: Merge 'dev' into 'test'
+        run: |
+          git checkout test
+          git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
+          git push origin test
+
+  build:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/test'
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
@@ -55,23 +75,3 @@ jobs:
           git add -A
           git commit -m "feat(readme-bot): auto-update content" || exit 0
           git push
-
-  merge_dev_to_test:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Set up Git for merging
-        run: |
-          git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "push-bot"
-
-      - name: Merge 'dev' into 'test'
-        run: |
-          git checkout test
-          git merge origin/dev --strategy-option theirs || (echo "Conflicts detected, attempting to resolve..." && git merge --abort && exit 1)
-          git push origin test

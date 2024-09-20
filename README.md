@@ -21,7 +21,7 @@
 
 - [_pastebin-backend_](https://github.com/alibekbirlikbai/pastebin-backend) - (_2_ commits total)<br/>pr: [test pr](https://github.com/alibekbirlikbai/pastebin-backend/pull/3) - :x: _closed_ - _2024-09-19_
 <!-- recent_pull_requests ends -->
-Больше [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
+Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
 </td>
 
@@ -48,7 +48,7 @@
 
 - [_proxy-server_](https://github.com/alibekbirlikbai/proxy-server) - (_6_ commits total)<br/>commit: [docs: add link to deployed URL](https://github.com/alibekbirlikbai/proxy-server/commit/150c67582b00233b8e7eb7b18a55e0e4f0f7efdc) - _2024-03-16_
 <!-- recent_commits ends -->
-Больше [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
+Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 
 </td>
 

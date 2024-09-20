@@ -333,26 +333,17 @@ if __name__ == "__main__":
 
     readme.open("w").write(readme_contents)
 
-    commits_md = "\n\n".join(
-        [
-            "- [{}]({}) - [{}]({}) - {}".format(
-                commit["repo_name"],
-                commit["repo_url"],
-                commit["message"],
-                commit["commit_url"],
-                commit["date"].split("T")[0],
-            )
-            for commit in commits[:10]
-        ]
-    )
-
     # Write out commits.md
     commits_md_full = "\n".join(
         [
-            "* **[{}]({}) - ** - {}".format(
+            "- [_{}_]({}) - (_{}_ commits total)<br/>"
+            "commit: [{}]({}) - _{}_".format(
+                commit["repo_name"],
+                commit["repo_url"],
+                commit["branch_commits_count"],
                 commit["message"],
                 commit["commit_url"],
-                commit["date"]
+                commit["date"].split("T")[0],
             )
             for commit in commits
         ]
@@ -362,8 +353,8 @@ if __name__ == "__main__":
     # Write out pull_requests.md
     pull_requests_md_full = "\n".join(
         [
-            "- [_{}_]({}) - ({} commits total)<br/>"
-            "pr: [{}]({}) - {} {} - {}".format(
+            "- [_{}_]({}) - (_{}_ commits total)<br/>"
+            "pr: [{}]({}) - {} _{}_ - _{}_".format(
                 pr["repo_name"],
                 pr["repo_url"],
                 pr["pr_commits_count"],

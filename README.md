@@ -8,7 +8,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`1`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
+Список из <!-- pull_requests_count starts -->`0`<!-- pull_requests_count ends --> _pull-request_ по <!-- 
 project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_count ends --> проектам, упорядоченных 
 по дате последнего обновления.
 
@@ -22,7 +22,7 @@ project_with_pull_requests_count starts -->`0`<!-- project_with_pull_requests_co
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
+Актуальные _commits_ по <!-- project_count starts -->`0`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
 <!-- recent_commits ends -->

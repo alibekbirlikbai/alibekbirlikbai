@@ -40,6 +40,8 @@
 
 </tr></table>
 
+<a href="https://github.com/alibekbirlikbai/alibekbirlikbai/actions"><img src="https://github.com/alibekbirlikbai/alibekbirlikbai/workflows/Update%20README/badge.svg" align="right" alt="pipeline"></a> <br/>
+
 > Проект вдохновлен [@simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 > [!NOTE]

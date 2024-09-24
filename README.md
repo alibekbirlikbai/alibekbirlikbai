@@ -1,4 +1,4 @@
-[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) &nbsp; [Website](https://alibekbirlikbai.github.io/) &nbsp; [Telegram](https://t.me/alibekbirlikbai)
+[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) &nbsp; [Projects/Docs](https://alibekbirlikbai.github.io/) &nbsp; [Telegram](https://t.me/alibekbirlikbai)
 
 
 <table><tr>

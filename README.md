@@ -24,7 +24,7 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_206_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/db03f5d65b3208ba6f5d145ae8d1394020ad0aa7) - _2024-09-24_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_208_ commits total)<br/>commit: [docs: add workflow status badge](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/9d81dc14ea15c0b72eaf277a4efeccd077051d31) - _2024-09-24_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

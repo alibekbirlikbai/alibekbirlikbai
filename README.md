@@ -1,8 +1,5 @@
-<div align="center">
-
 [Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) &nbsp; [Website](https://alibekbirlikbai.github.io/) &nbsp; [Telegram](https://t.me/alibekbirlikbai)
 
-</div>
 
 <table><tr>
 <td valign="top" width="50%">

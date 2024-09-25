@@ -34,7 +34,7 @@
 
 - [_jwt-backend_](https://github.com/alibekbirlikbai/jwt-backend) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_1_ commits total)<br/>commit: [Updates](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/7c2152c7d0b0a3c876dd76bf9ec81163124e359f) - _2024-09-25_
+- [_pastebin_](https://github.com/alibekbirlikbai/pastebin) - (_2_ commits total)<br/>commit: [Updates](https://github.com/alibekbirlikbai/pastebin/commit/cc8addde9c7b162a693fcde84b5ce5b717a96e54) - _2024-04-10_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

@@ -24,6 +24,8 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_1_ commits total)<br/>commit: [feat: initial React.js config](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/7139d2ae63f08d8f3a2803998e24e2b337e5ca62) - _2024-09-25_
+
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
@@ -31,8 +33,6 @@
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/microservice-expenses/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
 
 - [_jwt-backend_](https://github.com/alibekbirlikbai/jwt-backend) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
-
-- [_pastebin_](https://github.com/alibekbirlikbai/pastebin) - (_2_ commits total)<br/>commit: [Updates](https://github.com/alibekbirlikbai/pastebin/commit/cc8addde9c7b162a693fcde84b5ce5b717a96e54) - _2024-04-10_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

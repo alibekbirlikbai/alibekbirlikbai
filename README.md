@@ -8,10 +8,12 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`2`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
+Список из <!-- pull_requests_count starts -->`3`<!-- pull_requests_count ends --> _pull-request_ упорядоченных по дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
+
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_3_ commits total)<br/>pr: [Feature/basic html](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :white_check_mark: _open_ - _2024-09-27_
 
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
@@ -28,7 +30,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_1_ commits total)<br/>commit: [feat: initial React.js config](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/7139d2ae63f08d8f3a2803998e24e2b337e5ca62) - _2024-09-25_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_4_ commits total)<br/>commit: [feat: add github section in article rendering](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/a425bfe034599ea08677c3ed3498da468fe442ad) - _2024-09-27_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

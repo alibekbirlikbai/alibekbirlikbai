@@ -13,7 +13,7 @@
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_10_ commits total)<br/>pr: [Core HTML/React project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :white_check_mark: _open_ - _2024-09-28_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_12_ commits total)<br/>pr: [Core Html/React project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-29_
 
 - [_microservice-expenses_](https://github.com/alibekbirlikbai/microservice-expenses) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-expenses/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
@@ -30,7 +30,9 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_11_ commits total)<br/>commit: [feat: add highlighting for current active project/article in both sidebars](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/dfd74e8395f109d7505b9f3f2c7f3b83e12eb264) - _2024-09-28_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_2_ commits total)<br/>commit: [Core HTML/React project structure (#1)
+
+feat: implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/48a058978882519113ea5f0c10518f7963249b3b) - _2024-09-29_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

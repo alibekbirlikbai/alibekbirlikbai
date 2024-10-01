@@ -30,9 +30,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_2_ commits total)<br/>commit: [Core HTML/React project structure (#1)
-
-feat: implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/48a058978882519113ea5f0c10518f7963249b3b) - _2024-09-29_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_6_ commits total)<br/>commit: [feat: render content component through github api](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/023558228cd51f53eeac950892cce363c5450b85) - _2024-10-01_
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

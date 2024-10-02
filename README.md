@@ -1,5 +1,10 @@
-[Linkedin](https://www.linkedin.com/in/alibek-birlikbai/) &nbsp; [Projects & Docs](https://alibekbirlikbai.github.io/) &nbsp; [Telegram](https://t.me/alibekbirlikbai)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,docker,java,kotlin,spring,graphql,githubactions,react,sass,gcp,idea&theme=light" />
+  </a>
+</p>
 
+[Описание проектов с краткими Docs](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">

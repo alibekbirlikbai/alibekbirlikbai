@@ -2,7 +2,7 @@
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_3_ commits total)<br/>commit: [Implement Github API integration (fetch projects info) (#2)
 
 feat: Github API integration](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/bfdf27c113462a39d6db5f2351195f6c32023337) - _2024-10-02_
-- [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
+- [_charity-service_](https://github.com/alibekbirlikbai/charity-service) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-service/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
 - [_spring-security-polygone_](https://github.com/alibekbirlikbai/spring-security-polygone) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/spring-security-polygone/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
 - [_cloud-url-storage_](https://github.com/alibekbirlikbai/cloud-url-storage) - (_57_ commits total)<br/>commit: [feat: resolve cors configuration problem](https://github.com/alibekbirlikbai/cloud-url-storage/commit/d3d1f3f2af371254075460dbf1be751d046866ab) - _2024-04-05_

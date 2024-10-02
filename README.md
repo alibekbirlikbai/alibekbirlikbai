@@ -20,7 +20,7 @@
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_12_ commits total)<br/>pr: [Implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-29_
 
-- [_microservice-transaction-manager_](https://github.com/alibekbirlikbai/microservice-transaction-manager) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/microservice-transaction-manager/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/transaction-manager/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 
@@ -41,9 +41,9 @@ feat: Github API integration](https://github.com/alibekbirlikbai/alibekbirlikbai
 
 - [_university-bachelor_](https://github.com/alibekbirlikbai/university-bachelor) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/university-bachelor/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 
-- [_microservice-transaction-manager_](https://github.com/alibekbirlikbai/microservice-transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/microservice-transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
 
-- [_jwt-backend_](https://github.com/alibekbirlikbai/jwt-backend) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/jwt-backend/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
+- [_spring-security-polygone_](https://github.com/alibekbirlikbai/spring-security-polygone) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/spring-security-polygone/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

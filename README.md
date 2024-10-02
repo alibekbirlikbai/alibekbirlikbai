@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,docker,java,kotlin,spring,graphql,githubactions,react,sass,gcp,idea&theme=light" />
+    <img src="https://skillicons.dev/icons?i=git,docker,java,kotlin,spring,graphql,githubactions,gcp,idea,react,sass&theme=dark" />
   </a>
 </p>
 
-[Описание проектов с краткими Docs](https://alibekbirlikbai.github.io/)
+[Проекты & Документация](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">

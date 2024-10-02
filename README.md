@@ -31,7 +31,7 @@
 Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_233_ commits total)<br/>commit: [docs: add stack icons](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/22529b06e42a6ba269538c4f40fe7535fd19ea53) - _2024-10-02_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_6_ commits total)<br/>commit: [feat: render content component through github api](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/023558228cd51f53eeac950892cce363c5450b85) - _2024-10-01_
 

@@ -1,4 +1,4 @@
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_242_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/4ca9d3ce1e6fcf7f9ed8835df5a126b76b81c002) - _2024-10-02_
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_3_ commits total)<br/>commit: [Implement Github API integration (fetch projects info) (#2)
 
 feat: Github API integration](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/bfdf27c113462a39d6db5f2351195f6c32023337) - _2024-10-02_

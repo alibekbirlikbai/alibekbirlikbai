@@ -16,7 +16,7 @@
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_8_ commits total)<br/>pr: [Implement Github API integration (fetch projects info)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/2) - :ballot_box_with_check: _merged_ - _2024-10-02_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_8_ commits total)<br/>pr: [Implement Github API integration (fetch remote projects)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/2) - :ballot_box_with_check: _merged_ - _2024-10-02_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_12_ commits total)<br/>pr: [Implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-29_
 

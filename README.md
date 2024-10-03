@@ -39,7 +39,7 @@
 
 feat: Github API integration](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/bfdf27c113462a39d6db5f2351195f6c32023337) - _2024-10-02_
 
-- [_charity-service_](https://github.com/alibekbirlikbai/charity-service) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-service/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
+- [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-ux-ui/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
 

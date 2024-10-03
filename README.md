@@ -17,7 +17,7 @@
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_12_ commits total)<br/>pr: [Implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-29_
 
-- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_1_ commits total)<br/>pr: [Migration to Gradle](https://github.com/alibekbirlikbai/transaction-manager/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_1_ commits total)<br/>pr: [Migrate from Maven to Gradle](https://github.com/alibekbirlikbai/transaction-manager/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 

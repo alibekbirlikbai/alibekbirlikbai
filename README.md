@@ -16,7 +16,7 @@
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_1_ commits total)<br/>pr: [docs/content-and-style ](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/3) - :white_check_mark: _open_ - _2024-10-03_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_2_ commits total)<br/>pr: [docs/content-and-style ](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/3) - :white_check_mark: _open_ - _2024-10-03_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_8_ commits total)<br/>pr: [Implement Github API integration (fetch remote projects)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/2) - :ballot_box_with_check: _merged_ - _2024-10-02_
 
@@ -37,7 +37,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_4_ commits total)<br/>commit: [feat: disable ReactStrictMode (cancel double request to github api)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/0ea76b767f461ed9bfa7aaf8a100ced4b9ff7c4f) - _2024-10-03_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_5_ commits total)<br/>commit: [docs: add projects initial content (articles)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/9948c202ccab3556991e753a2e65766bc4788833) - _2024-10-03_
 
 - [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-ux-ui/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

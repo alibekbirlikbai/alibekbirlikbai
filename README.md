@@ -10,7 +10,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`5`<!-- pull_requests_count ends --> _pull-request_, упорядоченных по 
+Список из <!-- pull_requests_count starts -->`8`<!-- pull_requests_count ends --> _pull-request_, упорядоченных по 
 дате последнего обновления.
 
 <!-- recent_pull_requests starts -->
@@ -22,7 +22,7 @@
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_12_ commits total)<br/>pr: [Implement core html/react project structure](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-29_
 
-- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_1_ commits total)<br/>pr: [Migrate from Maven to Gradle](https://github.com/alibekbirlikbai/transaction-manager/pull/1) - :ballot_box_with_check: _merged_ - _2024-09-03_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_3_ commits total)<br/>pr: [Feature/jooq integration](https://github.com/alibekbirlikbai/transaction-manager/pull/4) - :white_check_mark: _open_ - _2024-10-04_
 <!-- recent_pull_requests ends -->
 Все актуальные [pull-requests](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/pull_requests.md)
 

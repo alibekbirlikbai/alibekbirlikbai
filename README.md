@@ -34,13 +34,13 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
+- [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
+
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_8_ commits total)<br/>commit: [docs: add projects initial content (sub-articles)](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/a298b93381cb89ae3939e3a22858f3564d3a171c) - _2024-10-04_
 
 - [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-ux-ui/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_
-
-- [_spring-security-polygone_](https://github.com/alibekbirlikbai/spring-security-polygone) - (_12_ commits total)<br/>commit: [feat: (auth-service) add authenticate() endpoint](https://github.com/alibekbirlikbai/spring-security-polygone/commit/77d7064f9091f6e135295ed44f203647ffcfdb84) - _2024-05-09_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

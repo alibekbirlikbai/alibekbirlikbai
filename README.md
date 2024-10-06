@@ -34,9 +34,9 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
-
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_9_ commits total)<br/>commit: [docs: add demo img/video content](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/5f08c28790b84ee26b31e064d1dbbc963601aa07) - _2024-10-05_
+
+- [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
 
 - [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-ux-ui/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 

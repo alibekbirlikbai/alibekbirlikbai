@@ -1,4 +1,4 @@
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_281_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/fc0239a5727849a2683cac3cb0bc0235fa0f7fd9) - _2024-10-07_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_283_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/fc10c66a352619f8e0b73ac8bdd5f5f917b19255) - _2024-10-07_
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_4_ commits total)<br/>commit: [docs/content-and-style  (#3)
 
 Core Sass/React project style and initial docs](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/78b21f5026a1406d4f698fb104d77460fdd2c23e) - _2024-10-07_

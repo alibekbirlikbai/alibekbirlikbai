@@ -34,7 +34,7 @@
 Последние _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> репо
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_279_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/79e3f941900c0b97bdd452b896a1286a71129ca8) - _2024-10-07_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_281_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/fc0239a5727849a2683cac3cb0bc0235fa0f7fd9) - _2024-10-07_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_4_ commits total)<br/>commit: [docs/content-and-style  (#3)
 

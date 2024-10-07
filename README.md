@@ -4,7 +4,7 @@
   </a>
 </p>
 
-[Проекты & docs](https://alibekbirlikbai.github.io/)
+[projects & docs](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">

@@ -10,8 +10,7 @@
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-Список из <!-- pull_requests_count starts -->`9`<!-- pull_requests_count ends --> _pull-request_, упорядоченных по 
-дате последнего обновления.
+Актуальные <!-- pull_requests_count starts -->`9`<!-- pull_requests_count ends --> _pull-request_
 
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [Separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_
@@ -32,7 +31,7 @@
 <td valign="top" width="50%">
 
 ### _Commits_
-Актуальные _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> проектам.
+Последние _commits_ по <!-- project_count starts -->`8`<!-- project_count ends --> репо
 
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_279_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/79e3f941900c0b97bdd452b896a1286a71129ca8) - _2024-10-07_

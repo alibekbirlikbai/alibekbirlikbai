@@ -1,5 +1,7 @@
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_10_ commits total)<br/>commit: [feat: add project initial style](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/d13a590b7888aadb4ff86f9beb66e2ff095343b1) - _2024-10-06_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_4_ commits total)<br/>commit: [docs/content-and-style  (#3)
+
+Core Sass/React project style and initial docs](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/78b21f5026a1406d4f698fb104d77460fdd2c23e) - _2024-10-07_
 - [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
 - [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_1_ commits total)<br/>commit: [feat(front-end): re-upload](https://github.com/alibekbirlikbai/charity-ux-ui/commit/d6bddf0ce625bbc2882a7c122630615912c7fb81) - _2024-09-17_
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_45_ commits total)<br/>commit: [feat(jooq-integration): currency-service setup jooq configuration](https://github.com/alibekbirlikbai/transaction-manager/commit/1bd69d192c3fa97a024ae322d9c3b1a413bd2d33) - _2024-09-06_

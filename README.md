@@ -35,13 +35,13 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 _last commits_ <!-- project_count starts -->`8`<!-- project_count ends -->
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_299_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/bb21a7cec335330eba8cb32252328a842ee673a5) - _2024-10-08_
 
-- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_40_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/transaction-manager/commit/25201b99c1228cfa1583f7f07b163b60761a0317) - _2024-10-08_
-
-- [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_3_ commits total)<br/>commit: [feat: change docs style](https://github.com/alibekbirlikbai/charity-ux-ui/commit/b34fe3d2338eb317c8501e39b75897073f726f7d) - _2024-10-08_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_41_ commits total)<br/>commit: [docs: add demo](https://github.com/alibekbirlikbai/transaction-manager/commit/a02747a5b6dd56a203574a09d20af6f05215c157) - _2024-10-08_
 
 - [_cloud-url-storage_](https://github.com/alibekbirlikbai/cloud-url-storage) - (_57_ commits total)<br/>commit: [feat: test for demo](https://github.com/alibekbirlikbai/cloud-url-storage/commit/49daaab9a2eef4981f6fa9dcb07b928659155147) - _2024-10-08_
+
+- [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_3_ commits total)<br/>commit: [feat: change docs style](https://github.com/alibekbirlikbai/charity-ux-ui/commit/b34fe3d2338eb317c8501e39b75897073f726f7d) - _2024-10-08_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_35_ commits total)<br/>commit: [docs: fix typo](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/19171f4e95dca07939c0911d02aeeadcdeef552a) - _2024-10-08_
 <!-- recent_commits ends -->

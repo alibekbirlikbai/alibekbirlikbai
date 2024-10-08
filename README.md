@@ -36,7 +36,7 @@
 
 - [_cloud-url-storage_](https://github.com/alibekbirlikbai/cloud-url-storage) - (_57_ commits total)<br/>commit: [feat: test for demo](https://github.com/alibekbirlikbai/cloud-url-storage/commit/49daaab9a2eef4981f6fa9dcb07b928659155147) - _2024-10-08_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_34_ commits total)<br/>commit: [Merge branch 'gh-pages' of https://github.com/alibekbirlikbai/alibekbirlikbai.github.io into gh-pages](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/0a8cd1ad14b3496f9cecf579ba843aa3f2eaaa23) - _2024-10-08_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_35_ commits total)<br/>commit: [docs: fix typo](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/19171f4e95dca07939c0911d02aeeadcdeef552a) - _2024-10-08_
 
 - [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
 

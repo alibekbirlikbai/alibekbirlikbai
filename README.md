@@ -32,7 +32,7 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 
 ### _Commits_
 
-_last commits_
+_last commits_ <!-- project_count starts -->`8`<!-- project_count ends -->
 
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_290_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/2ef58cf0a70afa51183eddb101f1f329fcb65f3e) - _2024-10-08_

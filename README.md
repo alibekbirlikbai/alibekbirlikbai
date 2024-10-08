@@ -36,7 +36,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_25_ commits total)<br/>commit: [fix: fix img/video src](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/e37eedf7154a07b6593207bcd3f9d8226a526ac0) - _2024-10-07_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_34_ commits total)<br/>commit: [Merge branch 'gh-pages' of https://github.com/alibekbirlikbai/alibekbirlikbai.github.io into gh-pages](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/0a8cd1ad14b3496f9cecf579ba843aa3f2eaaa23) - _2024-10-08_
 
 - [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_1_ commits total)<br/>commit: [test commit](https://github.com/alibekbirlikbai/git-polygone/commit/27eab2004fca8949c4be0b0d37acf6db8ae82965) - _2024-10-04_
 

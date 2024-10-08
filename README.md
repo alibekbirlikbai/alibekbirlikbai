@@ -53,6 +53,14 @@ _last commits_ <!-- project_count starts -->`8`<!-- project_count ends -->
 
 <a href="https://github.com/alibekbirlikbai/alibekbirlikbai/actions"><img src="https://github.com/alibekbirlikbai/alibekbirlikbai/workflows/Update%20README/badge.svg" align="right" alt="pipeline"></a> <br/>
 
+
+
+
+https://github.com/user-attachments/assets/9946ad53-02e0-4365-aeac-ec6364c602e9
+
+
+
+
 > Проект основан на [github.com/simonw](https://github.com/simonw/simonw) и статьей ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/)
 
 > [!NOTE]

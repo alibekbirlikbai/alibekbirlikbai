@@ -34,13 +34,13 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
+- [_sql-polygone_](https://github.com/alibekbirlikbai/sql-polygone) - (_1_ commits total)<br/>commit: [first commit](https://github.com/alibekbirlikbai/sql-polygone/commit/43915be5b718be9006150178d65cc62334d293ee) - _2024-10-16_
+
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_41_ commits total)<br/>commit: [docs: add demo](https://github.com/alibekbirlikbai/transaction-manager/commit/a02747a5b6dd56a203574a09d20af6f05215c157) - _2024-10-08_
 
 - [_cloud-url-storage_](https://github.com/alibekbirlikbai/cloud-url-storage) - (_57_ commits total)<br/>commit: [feat: test for demo](https://github.com/alibekbirlikbai/cloud-url-storage/commit/49daaab9a2eef4981f6fa9dcb07b928659155147) - _2024-10-08_
 
 - [_charity-ux-ui_](https://github.com/alibekbirlikbai/charity-ux-ui) - (_3_ commits total)<br/>commit: [feat: change docs style](https://github.com/alibekbirlikbai/charity-ux-ui/commit/b34fe3d2338eb317c8501e39b75897073f726f7d) - _2024-10-08_
-
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_35_ commits total)<br/>commit: [docs: fix typo](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/19171f4e95dca07939c0911d02aeeadcdeef552a) - _2024-10-08_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

@@ -35,9 +35,9 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 _last commits_ <!-- project_count starts -->`9`<!-- project_count ends -->
 
 <!-- recent_commits starts -->
-- [_sql-polygone_](https://github.com/alibekbirlikbai/sql-polygone) - (_1_ commits total)<br/>commit: [first commit](https://github.com/alibekbirlikbai/sql-polygone/commit/43915be5b718be9006150178d65cc62334d293ee) - _2024-10-16_
-
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
+
+- [_sql-polygone_](https://github.com/alibekbirlikbai/sql-polygone) - (_1_ commits total)<br/>commit: [first commit](https://github.com/alibekbirlikbai/sql-polygone/commit/43915be5b718be9006150178d65cc62334d293ee) - _2024-10-16_
 
 - [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_41_ commits total)<br/>commit: [docs: add demo](https://github.com/alibekbirlikbai/transaction-manager/commit/a02747a5b6dd56a203574a09d20af6f05215c157) - _2024-10-08_
 

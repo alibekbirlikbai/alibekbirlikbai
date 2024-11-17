@@ -39,7 +39,7 @@ _last commits_ <!-- project_count starts -->`9`<!-- project_count ends -->
 
 - [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_2_ commits total)<br/>commit: [test](https://github.com/alibekbirlikbai/git-polygone/commit/77c8a9a23be5565b994cc77a0de0ba38718ecf83) - _2024-11-11_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_38_ commits total)<br/>commit: [feat: add copyright + 'api' as prioratized skill](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/ec14c50dca9a6e4a5a7a5bab6f327f5da4705af3) - _2024-11-03_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_39_ commits total)<br/>commit: [feat: make articles expandable + refresh site style](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/78a6146f137a8a440a797a5e2ee24374b4c971a9) - _2024-11-17_
 
 - [_sql-polygone_](https://github.com/alibekbirlikbai/sql-polygone) - (_1_ commits total)<br/>commit: [first commit](https://github.com/alibekbirlikbai/sql-polygone/commit/43915be5b718be9006150178d65cc62334d293ee) - _2024-10-16_
 

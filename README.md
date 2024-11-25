@@ -40,7 +40,7 @@
 
 - [_sql-polygone_](https://github.com/alibekbirlikbai/sql-polygone) - (_1_ commits total)<br/>commit: [first commit](https://github.com/alibekbirlikbai/sql-polygone/commit/43915be5b718be9006150178d65cc62334d293ee) - _2024-10-16_
 
-- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_41_ commits total)<br/>commit: [docs: add demo](https://github.com/alibekbirlikbai/transaction-manager/commit/a02747a5b6dd56a203574a09d20af6f05215c157) - _2024-10-08_
+- [_transaction-manager_](https://github.com/alibekbirlikbai/transaction-manager) - (_43_ commits total)<br/>commit: [Merge pull request #3 from alibekbirlikbai/feature/gradle-migration](https://github.com/alibekbirlikbai/transaction-manager/commit/abeb0ec2b5383d63d37753d67164dadf04ea9fe7) - _2024-11-25_
 <!-- recent_commits ends -->
 Все актуальные [commits](https://github.com/alibekbirlikbai/alibekbirlikbai/blob/main/md/commits.md)
 

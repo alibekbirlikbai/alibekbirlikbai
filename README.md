@@ -34,7 +34,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_40_ commits total)<br/>commit: [feat: implement changes for all projects](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/f2d3ff927e94374e6ff7e03d7def54c2f3ca580a) - _2024-11-17_
+- [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_41_ commits total)<br/>commit: [docs: change site's meta descrtiption](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/f93e08fdd90f04f6cdea4eebd0c697d2f86c4e24) - _2024-11-29_
 
 - [_git-polygone_](https://github.com/alibekbirlikbai/git-polygone) - (_2_ commits total)<br/>commit: [test](https://github.com/alibekbirlikbai/git-polygone/commit/77c8a9a23be5565b994cc77a0de0ba38718ecf83) - _2024-11-11_
 

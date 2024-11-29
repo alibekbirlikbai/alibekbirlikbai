@@ -35,7 +35,7 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 _last commits_ <!-- project_count starts -->`9`<!-- project_count ends --> (by repo)
 
 <!-- recent_commits starts -->
-- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_325_ commits total)<br/>commit: [docs: change docs style](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/2e5ca8c1efb108c3b602c8648762421b67607e03) - _2024-11-29_
+- [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_41_ commits total)<br/>commit: [docs: change site's meta descrtiption](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/f93e08fdd90f04f6cdea4eebd0c697d2f86c4e24) - _2024-11-29_
 

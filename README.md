@@ -4,13 +4,13 @@
   </a>
 </p>
 
-[Сайт/Hub для docs и хостинга проектов](https://alibekbirlikbai.github.io/)
+[Сервер для хостинга проектов](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">
 
 ### _Pull-Request_
-_pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count ends --> 
+_pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count ends --> (total)
 
 <!-- recent_pull_requests starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_150_ commits total)<br/>pr: [feat(prod): separate workflows for merging from `dev`, and auto-updating `test` and `main` branches](https://github.com/alibekbirlikbai/alibekbirlikbai/pull/3) - :ballot_box_with_check: _merged_ - _2024-09-20_

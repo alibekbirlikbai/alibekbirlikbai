@@ -35,7 +35,7 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 _last commits_ <!-- project_count starts -->`10`<!-- project_count ends --> (by repo)
 
 <!-- recent_commits starts -->
-- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_2_ commits total)<br/>commit: [feat: basic project structure](https://github.com/alibekbirlikbai/car-restful-api/commit/4135339f4c9ff5353d71ca58b8a8afbcd7e25564) - _2024-12-14_
+- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_3_ commits total)<br/>commit: [feat: add docker compose](https://github.com/alibekbirlikbai/car-restful-api/commit/059b81dc2bacda0a6e60e354d8cffab1330f70e4) - _2024-12-14_
 
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 

@@ -34,7 +34,7 @@
 <!-- recent_commits starts -->
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 
-- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_10_ commits total)<br/>commit: [docs: update README.md](https://github.com/alibekbirlikbai/car-restful-api/commit/7df49c4220145c8e4621760e2f5aafd6f40b3d0e) - _2024-12-14_
+- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_11_ commits total)<br/>commit: [feat: basic auth/jwt implement](https://github.com/alibekbirlikbai/car-restful-api/commit/7b76bf5cb23afbc0aff13b03e962b378c50dfda6) - _2024-12-17_
 
 - [_alibekbirlikbai.github.io_](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io) - (_41_ commits total)<br/>commit: [docs: change site's meta descrtiption](https://github.com/alibekbirlikbai/alibekbirlikbai.github.io/commit/f93e08fdd90f04f6cdea4eebd0c697d2f86c4e24) - _2024-11-29_
 

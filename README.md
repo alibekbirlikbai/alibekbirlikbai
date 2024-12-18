@@ -35,7 +35,7 @@ _pull-request_ <!-- pull_requests_count starts -->`9`<!-- pull_requests_count en
 _last commits_ <!-- project_count starts -->`10`<!-- project_count ends --> (by repo)
 
 <!-- recent_commits starts -->
-- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_11_ commits total)<br/>commit: [feat: basic auth/jwt implement](https://github.com/alibekbirlikbai/car-restful-api/commit/d0cd351e8cb488d9123ef075e0cafbb26cbbc99c) - _2024-12-18_
+- [_car-restful-api_](https://github.com/alibekbirlikbai/car-restful-api) - (_13_ commits total)<br/>commit: [docs: update README.md](https://github.com/alibekbirlikbai/car-restful-api/commit/fca6da19f8417c3e800346a7990377799a1b0964) - _2024-12-18_
 
 - [_alibekbirlikbai_](https://github.com/alibekbirlikbai/alibekbirlikbai) - (_193_ commits total)<br/>commit: [feat(dev): test deploy](https://github.com/alibekbirlikbai/alibekbirlikbai/commit/a0dbd0c7b6829f53b066e7e6aca31d2a5e3735fe) - _2024-09-20_
 

@@ -1,10 +1,18 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,docker,java,kotlin,spring,idea,react,sass&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=bash,linux,git,githubactions,gitlab,idea,vim,jenkins,docker,java,kotlin,spring,notion,sass&theme=dark" />
   </a>
 </p>
 
-[Сервер для хостинга проектов](https://alibekbirlikbai.github.io/)
+<p align="center">
+  <a href="https://go-skill-icons.vercel.app/">
+    <img
+      src="https://go-skill-icons.vercel.app/api/icons?i=arch,aws,blender,chatgpt,elasticsearch,cpp,figma,gcp,gemini,jwt,kubernetes,python,youtube"
+    />
+  </a>
+</p>
+
+[Личный сервер для хостинга проектов](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">

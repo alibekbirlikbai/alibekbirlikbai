@@ -4,7 +4,7 @@
   </a>
 </p>
 
-[Личный сервер для хостинга проектов](https://alibekbirlikbai.github.io/)
+[Сервер для хостинга проектов](https://alibekbirlikbai.github.io/)
 
 <table><tr>
 <td valign="top" width="50%">

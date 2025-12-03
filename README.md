@@ -1,14 +1,6 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=bash,linux,git,githubactions,gitlab,idea,vim,jenkins,docker,java,kotlin,spring,notion,sass&theme=dark" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://go-skill-icons.vercel.app/">
-    <img
-      src="https://go-skill-icons.vercel.app/api/icons?i=arch,aws,blender,chatgpt,elasticsearch,cpp,figma,gcp,gemini,jwt,kubernetes,python,youtube"
-    />
+    <img src="https://skillicons.dev/icons?i=java,spring,gradle,mysql,docker,jenkins,bash,linux,ubuntu,git,gitlab,idea,vim,gcp,latex,notion,obsidian&theme=dark" />
   </a>
 </p>
 

@@ -2,6 +2,9 @@
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,spring,gradle,mysql,docker,jenkins,bash,linux,ubuntu,git,gitlab,idea,vim,gcp,latex,notion,obsidian&theme=dark" />
   </a>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=maven,gradle,docker,jenkins,bash,linux,ubuntu,git,gitlab,idea,vim,latex,notion,obsidian&theme=dark" />
+  </a>
 </p>
 
 [Сервер для хостинга проектов](https://alibekbirlikbai.github.io/)

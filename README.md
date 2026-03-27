@@ -1,9 +1,6 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,spring,mysql&theme=dark" />
-  </a>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=maven,gradle,docker,jenkins,bash,linux,ubuntu,git,gitlab,idea,vim,latex,notion,obsidian&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=java,spring,mysql,mongodb,redis,linux,docker,kubernetes,git,gitlab,grafana,kafka,maven,redis,obsidian,latex,&theme=dark" />
   </a>
 </p>
 
